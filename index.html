@@ -801,7 +801,7 @@ table.btable tfoot td {
 /* ── SPONSORSHIP PACKAGES ── */
 .pkg-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 16px;
 }
 .pkg-card {
@@ -815,6 +815,9 @@ table.btable tfoot td {
 .pkg-card.co { background: linear-gradient(135deg, var(--energy-green), #1B5E20); color: white; }
 .pkg-card.associate { background: linear-gradient(135deg, var(--sky-blue), #0D47A1); color: white; }
 .pkg-card.media { background: linear-gradient(135deg, var(--accent-teal), #004D40); color: white; }
+.pkg-card.silver { background: linear-gradient(135deg, #C7CDD4, #7A8793); color: white; }
+.pkg-card.bronze { background: linear-gradient(135deg, #B87333, #7A4A20); color: white; }
+.pkg-card.ev { background: linear-gradient(135deg, #8BC34A, #33691E); color: white; }
 .pkg-label { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; opacity: 0.75; margin-bottom: 10px; }
 .pkg-name { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; margin-bottom: 4px; }
 .pkg-price { font-size: 28px; font-weight: 700; margin-bottom: 14px; }
@@ -870,6 +873,7 @@ table.btable tfoot td {
 
 /* ── RESPONSIVE ── */
 @media (max-width: 900px) {
+  .pkg-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .hero-grid { grid-template-columns: 1fr; }
   .countdown-card { display: none; }
   .nav-tabs { display: none; }
@@ -878,6 +882,7 @@ table.btable tfoot td {
   .hero { padding: 40px 20px; }
 }
 @media (max-width: 600px) {
+  .pkg-grid { grid-template-columns: 1fr; }
   .task-grid { grid-template-columns: 1fr; }
   .kpi-row { grid-template-columns: repeat(2, 1fr); }
 }
@@ -1572,11 +1577,37 @@ table.btable tfoot td {
         <div class="pkg-feature">✅ Press + journalist accreditation</div>
         <div class="pkg-feature">✅ On-site media booth</div>
       </div>
-
-
-
-
-      
+      <div class="pkg-card silver">
+        <div class="pkg-label">Extended Reach</div>
+        <div class="pkg-name">SILVER</div>
+        <div style="font-size: 13px; margin-bottom: 14px; opacity: 0.85;">Rs. 2,50,000</div>
+        <div class="pkg-feature">✅ 30 stalls allocation</div>
+        <div class="pkg-feature">✅ 4 x 4 stall size</div>
+        <div class="pkg-feature">✅ Lobby logo visibility</div>
+        <div class="pkg-feature">✅ Registration counter branding</div>
+        <div class="pkg-feature">✅ 30-second LED wall video slots</div>
+        <div class="pkg-feature">✅ 15 days social promotion support</div>
+      </div>
+      <div class="pkg-card bronze">
+        <div class="pkg-label">Entry Tier</div>
+        <div class="pkg-name">BRONZE</div>
+        <div style="font-size: 13px; margin-bottom: 14px; opacity: 0.85;">Rs. 75,000</div>
+        <div class="pkg-feature">✅ 74 stalls allocation</div>
+        <div class="pkg-feature">✅ 3 x 3 stall size</div>
+        <div class="pkg-feature">✅ Cost-effective brand presence</div>
+        <div class="pkg-feature">✅ Shared venue visibility</div>
+        <div class="pkg-feature">✅ Suitable for volume participation</div>
+      </div>
+      <div class="pkg-card ev">
+        <div class="pkg-label">Special Category</div>
+        <div class="pkg-name">EV STALLS</div>
+        <div style="font-size: 13px; margin-bottom: 14px; opacity: 0.85;">Rs. 50,000</div>
+        <div class="pkg-feature">✅ 10 dedicated stalls</div>
+        <div class="pkg-feature">✅ 5 x 4 open space format</div>
+        <div class="pkg-feature">✅ Tailored for EV showcase brands</div>
+        <div class="pkg-feature">✅ High-visibility product display area</div>
+        <div class="pkg-feature">✅ Ideal for live demos and walkarounds</div>
+      </div>
     </div>
 
 
