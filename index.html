@@ -3,2138 +3,1025 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Masters Kerala RE Expo 2026 — Marketing Masterplan</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/chart.js@4.5.1/dist/chart.umd.min.js"></script>
+<title>Masters Kerala RE Expo 2026 — Revised Campaign Proposal</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
 <style>
-:root {
-  /* Masters brand palette extracted from expokerala.com */
-  --solar-gold: #F5A623;
-  --energy-green: #2E7D32;
-  --deep-navy: #0D1B2A;
-  --sky-blue: #1565C0;
-  --white: #FFFFFF;
-  --cream: #FFF8EE;
-  --light-gray: #F4F6F8;
-  --text-dark: #1A1A2E;
-  --text-mid: #4A5568;
-  --text-light: #718096;
-  --border: #E2E8F0;
-  --success: #22C55E;
-  --warning: #F59E0B;
-  --danger: #EF4444;
-  --accent-teal: #00897B;
+:root{
+  --gold:#F5A623;--gold-dk:#C8850D;--green:#2E7D32;--navy:#0D1B2A;
+  --sky:#1565C0;--teal:#00897B;--cream:#FDFAF5;--white:#FFFFFF;
+  --gray:#F4F6F8;--border:#E2E8F0;--text:#1A1A2E;--mid:#4A5568;--lt:#718096;
+  --success:#16A34A;--warn:#D97706;--danger:#DC2626;
+  --r:12px;--rs:8px;
+  --sh:0 2px 12px rgba(0,0,0,0.07);--sh-lg:0 8px 32px rgba(0,0,0,0.10);
+}
+*{box-sizing:border-box;margin:0;padding:0;}
+html{scroll-behavior:smooth;}
+body{font-family:'DM Sans',sans-serif;background:var(--cream);color:var(--text);font-size:14px;}
 
-  /* FlumenX / Misc Archive */
-  --fx-green: #1B4332;
-  --fx-gold: #C9A84C;
-  --fx-teal: #0D7377;
-
-  --radius: 12px;
-  --radius-sm: 8px;
-  --shadow: 0 4px 20px rgba(0,0,0,0.08);
-  --shadow-lg: 0 10px 40px rgba(0,0,0,0.12);
-}
-
-* { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; }
-
-body {
-  font-family: 'DM Sans', sans-serif;
-  background: var(--light-gray);
-  color: var(--text-dark);
-  min-height: 100vh;
-}
-
-/* ── NAV ── */
-.topbar {
-  position: fixed;
-  top: 0; left: 0; right: 0;
-  z-index: 999;
-  background: var(--deep-navy);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 24px;
-  height: 58px;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.3);
-}
-.topbar-brand {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-}
-.topbar-logo {
-  width: 36px; height: 36px;
-  background: linear-gradient(135deg, var(--solar-gold), #E8960A);
-  border-radius: 8px;
-  display: flex; align-items: center; justify-content: center;
-  font-size: 18px;
-}
-.topbar-title {
-  font-family: 'Playfair Display', serif;
-  font-size: 15px;
-  font-weight: 700;
-  color: var(--white);
-  letter-spacing: 0.3px;
-}
-.topbar-sub {
-  font-size: 11px;
-  color: var(--solar-gold);
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-.nav-tabs {
-  display: flex;
-  gap: 4px;
-  list-style: none;
-}
-.nav-tabs li a {
-  display: block;
-  padding: 6px 14px;
-  border-radius: 6px;
-  font-size: 12px;
-  font-weight: 500;
-  color: rgba(255,255,255,0.7);
-  text-decoration: none;
-  transition: all 0.2s;
-}
-.nav-tabs li a:hover,
-.nav-tabs li a.active {
-  background: rgba(245,166,35,0.15);
-  color: var(--solar-gold);
-}
-.agency-badge {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 11px;
-  color: rgba(255,255,255,0.5);
-}
-.agency-badge span { color: var(--fx-gold); font-weight: 600; }
-
-/* ── MAIN ── */
-.main {
-  padding-top: 78px;
-}
+/* ── TOP NAV ── */
+.nav{position:fixed;top:0;left:0;right:0;z-index:999;background:var(--navy);height:52px;display:flex;align-items:center;justify-content:space-between;padding:0 32px;box-shadow:0 2px 10px rgba(0,0,0,0.3);}
+.nav-brand{display:flex;align-items:center;gap:10px;}
+.nav-dot{width:30px;height:30px;background:linear-gradient(135deg,var(--gold),var(--gold-dk));border-radius:7px;display:flex;align-items:center;justify-content:center;font-size:15px;}
+.nav-name{font-family:'Playfair Display',serif;font-size:14px;font-weight:700;color:var(--white);}
+.nav-sub{font-size:10px;color:var(--gold);letter-spacing:1.5px;text-transform:uppercase;}
+.nav-links{display:flex;gap:2px;}
+.nav-links a{padding:5px 12px;border-radius:5px;font-size:11px;font-weight:500;color:rgba(255,255,255,0.6);text-decoration:none;transition:.2s;}
+.nav-links a:hover{background:rgba(245,166,35,0.12);color:var(--gold);}
+.nav-confirm{background:var(--gold);color:var(--navy);font-size:11px;font-weight:700;padding:5px 14px;border-radius:5px;}
 
 /* ── HERO ── */
-.hero {
-  background: linear-gradient(135deg, var(--deep-navy) 0%, #162032 60%, #0D2640 100%);
-  position: relative;
-  overflow: hidden;
-  padding: 60px 40px 50px;
-}
-.hero::before {
-  content: '';
-  position: absolute;
-  top: -60px; right: -60px;
-  width: 400px; height: 400px;
-  background: radial-gradient(circle, rgba(245,166,35,0.12) 0%, transparent 70%);
-  pointer-events: none;
-}
-.hero::after {
-  content: '';
-  position: absolute;
-  bottom: -80px; left: -80px;
-  width: 350px; height: 350px;
-  background: radial-gradient(circle, rgba(46,125,50,0.1) 0%, transparent 70%);
-  pointer-events: none;
-}
-.hero-grid {
-  display: grid;
-  grid-template-columns: 1fr 340px;
-  gap: 40px;
-  max-width: 1300px;
-  margin: 0 auto;
-  align-items: center;
-  position: relative;
-  z-index: 1;
-}
-.hero-eyebrow {
-  font-size: 11px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: var(--solar-gold);
-  font-weight: 600;
-  margin-bottom: 14px;
-}
-.hero h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: clamp(28px, 3.5vw, 48px);
-  font-weight: 900;
-  color: var(--white);
-  line-height: 1.15;
-  margin-bottom: 18px;
-}
-.hero h1 em {
-  font-style: normal;
-  color: var(--solar-gold);
-}
-.hero-desc {
-  font-size: 15px;
-  color: rgba(255,255,255,0.65);
-  line-height: 1.7;
-  margin-bottom: 28px;
-  max-width: 560px;
-}
-.hero-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-.hero-tag {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  background: rgba(255,255,255,0.07);
-  border: 1px solid rgba(255,255,255,0.12);
-  border-radius: 20px;
-  padding: 5px 14px;
-  font-size: 12px;
-  color: rgba(255,255,255,0.8);
-}
+.hero{background:linear-gradient(135deg,var(--navy) 0%,#122030 55%,#0D2540 100%);padding:80px 0 60px;position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;top:-100px;right:-100px;width:500px;height:500px;background:radial-gradient(circle,rgba(245,166,35,0.08) 0%,transparent 65%);pointer-events:none;}
+.hero::after{content:'';position:absolute;bottom:-80px;left:-60px;width:400px;height:400px;background:radial-gradient(circle,rgba(46,125,50,0.07) 0%,transparent 65%);pointer-events:none;}
+.wrap{max-width:1200px;margin:0 auto;padding:0 32px;}
+.hero-inner{display:grid;grid-template-columns:1fr 320px;gap:48px;align-items:center;position:relative;z-index:1;}
+.hero-eye{font-size:10px;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:14px;}
+.hero-h1{font-family:'Playfair Display',serif;font-size:clamp(30px,3.5vw,50px);font-weight:900;color:var(--white);line-height:1.1;margin-bottom:16px;}
+.hero-h1 em{font-style:normal;color:var(--gold);}
+.hero-desc{font-size:13px;color:rgba(255,255,255,0.6);line-height:1.7;margin-bottom:24px;max-width:520px;}
+.hero-flags{display:flex;flex-wrap:wrap;gap:8px;}
+.hflag{display:inline-flex;align-items:center;gap:5px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.10);border-radius:20px;padding:4px 12px;font-size:11px;color:rgba(255,255,255,0.75);}
 
-/* Countdown card */
-.countdown-card {
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(245,166,35,0.25);
-  border-radius: var(--radius);
-  padding: 28px 24px;
-  text-align: center;
-}
-.countdown-title {
-  font-size: 11px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: var(--solar-gold);
-  margin-bottom: 16px;
-}
-.countdown-date {
-  font-family: 'Playfair Display', serif;
-  font-size: 26px;
-  font-weight: 700;
-  color: var(--white);
-  margin-bottom: 6px;
-}
-.countdown-venue {
-  font-size: 12px;
-  color: rgba(255,255,255,0.5);
-  margin-bottom: 20px;
-}
-.countdown-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 8px;
-  margin-bottom: 20px;
-}
-.count-box {
-  background: rgba(245,166,35,0.1);
-  border-radius: 8px;
-  padding: 10px 4px;
-}
-.count-num {
-  font-size: 24px;
-  font-weight: 700;
-  color: var(--solar-gold);
-  display: block;
-  font-family: 'Playfair Display', serif;
-}
-.count-lbl {
-  font-size: 9px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  color: rgba(255,255,255,0.4);
-}
-.event-stats {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-}
-.ev-stat {
-  text-align: center;
-}
-.ev-stat-num {
-  font-size: 18px;
-  font-weight: 700;
-  color: var(--white);
-}
-.ev-stat-lbl {
-  font-size: 10px;
-  color: rgba(255,255,255,0.4);
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
+/* Event card */
+.ev-card{background:rgba(255,255,255,0.04);border:1px solid rgba(245,166,35,0.2);border-radius:var(--r);padding:24px;}
+.ev-date{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--white);margin-bottom:4px;}
+.ev-venue{font-size:12px;color:rgba(255,255,255,0.45);margin-bottom:18px;}
+.ev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;}
+.ev-stat{text-align:center;background:rgba(0,0,0,0.2);border-radius:8px;padding:10px 6px;}
+.ev-num{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--gold);display:block;}
+.ev-lbl{font-size:9px;text-transform:uppercase;letter-spacing:0.8px;color:rgba(255,255,255,0.35);}
+.ev-timeline{margin-top:14px;padding-top:14px;border-top:1px solid rgba(255,255,255,0.08);}
+.ev-tl-row{display:flex;justify-content:space-between;font-size:11px;margin-bottom:5px;}
+.ev-tl-lbl{color:rgba(255,255,255,0.4);}
+.ev-tl-val{color:var(--white);font-weight:600;}
 
 /* ── SECTION WRAPPER ── */
-.section {
-  max-width: 1300px;
-  margin: 0 auto;
-  padding: 0 24px;
-}
-.section-block {
-  padding: 40px 0;
-}
-.section-block + .section-block {
-  border-top: 1px solid var(--border);
-}
-.section-label {
-  font-size: 10px;
-  letter-spacing: 2.5px;
-  text-transform: uppercase;
-  color: var(--solar-gold);
-  font-weight: 700;
-  margin-bottom: 8px;
-}
-.section-title {
-  font-family: 'Playfair Display', serif;
-  font-size: clamp(22px, 2.5vw, 32px);
-  font-weight: 700;
-  color: var(--text-dark);
-  margin-bottom: 6px;
-}
-.section-sub {
-  font-size: 14px;
-  color: var(--text-light);
-  margin-bottom: 28px;
-  max-width: 640px;
-}
+.section{padding:52px 0;border-bottom:1px solid var(--border);}
+.section:last-child{border-bottom:none;}
+.section-eye{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:6px;}
+.section-h{font-family:'Playfair Display',serif;font-size:clamp(22px,2.5vw,34px);font-weight:700;margin-bottom:8px;}
+.section-sub{font-size:13px;color:var(--mid);max-width:600px;line-height:1.7;margin-bottom:28px;}
 
-/* ── KPI CARDS ── */
-.kpi-row {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 16px;
-  margin-bottom: 32px;
-}
-.kpi-card {
-  background: var(--white);
-  border-radius: var(--radius);
-  padding: 20px;
-  box-shadow: var(--shadow);
-  border-left: 4px solid var(--solar-gold);
-  position: relative;
-  overflow: hidden;
-}
-.kpi-card.green { border-left-color: var(--energy-green); }
-.kpi-card.blue { border-left-color: var(--sky-blue); }
-.kpi-card.teal { border-left-color: var(--accent-teal); }
-.kpi-card.navy { border-left-color: var(--deep-navy); }
-.kpi-lbl {
-  font-size: 11px;
-  text-transform: uppercase;
-  letter-spacing: 0.8px;
-  color: var(--text-light);
-  margin-bottom: 8px;
-  font-weight: 600;
-}
-.kpi-val {
-  font-family: 'Playfair Display', serif;
-  font-size: 28px;
-  font-weight: 700;
-  color: var(--text-dark);
-  line-height: 1;
-  margin-bottom: 4px;
-}
-.kpi-note {
-  font-size: 12px;
-  color: var(--text-light);
-}
-.kpi-icon {
-  position: absolute;
-  right: 16px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 32px;
-  opacity: 0.1;
-}
-
-/* ── TABS ── */
-.tab-nav {
-  display: flex;
-  gap: 0;
-  background: var(--white);
-  border-radius: var(--radius);
-  padding: 6px;
-  margin-bottom: 28px;
-  box-shadow: var(--shadow);
-  overflow-x: auto;
-  flex-wrap: nowrap;
-}
-.tab-btn {
-  flex: none;
-  padding: 10px 18px;
-  border-radius: 8px;
-  border: none;
-  background: transparent;
-  font-family: 'DM Sans', sans-serif;
-  font-size: 13px;
-  font-weight: 500;
-  color: var(--text-mid);
-  cursor: pointer;
-  transition: all 0.2s;
-  white-space: nowrap;
-}
-.tab-btn.active {
-  background: var(--deep-navy);
-  color: var(--white);
-}
-.tab-btn:hover:not(.active) {
-  background: var(--light-gray);
-}
-.tab-panel { display: none; }
-.tab-panel.active { display: block; }
-
-/* ── STRATEGY PILLARS ── */
-.pillars-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 16px;
-}
-.pillar-card {
-  background: var(--white);
-  border-radius: var(--radius);
-  padding: 24px;
-  box-shadow: var(--shadow);
-}
-.pillar-icon {
-  width: 44px; height: 44px;
-  border-radius: 10px;
-  display: flex; align-items: center; justify-content: center;
-  font-size: 22px;
-  margin-bottom: 14px;
-}
-.pillar-card:nth-child(1) .pillar-icon { background: rgba(245,166,35,0.12); }
-.pillar-card:nth-child(2) .pillar-icon { background: rgba(46,125,50,0.12); }
-.pillar-card:nth-child(3) .pillar-icon { background: rgba(21,101,192,0.12); }
-.pillar-card:nth-child(4) .pillar-icon { background: rgba(0,137,123,0.12); }
-.pillar-card:nth-child(5) .pillar-icon { background: rgba(245,166,35,0.12); }
-.pillar-card:nth-child(6) .pillar-icon { background: rgba(239,68,68,0.12); }
-.pillar-title {
-  font-weight: 700;
-  font-size: 15px;
-  margin-bottom: 8px;
-  color: var(--text-dark);
-}
-.pillar-desc {
-  font-size: 13px;
-  color: var(--text-mid);
-  line-height: 1.6;
-}
-
-/* ── TIMELINE ── */
-.timeline {
-  position: relative;
-  padding-left: 30px;
-}
-.timeline::before {
-  content: '';
-  position: absolute;
-  left: 10px;
-  top: 0; bottom: 0;
-  width: 2px;
-  background: linear-gradient(to bottom, var(--solar-gold), var(--energy-green), var(--sky-blue));
-}
-.timeline-item {
-  position: relative;
-  margin-bottom: 28px;
-}
-.timeline-dot {
-  position: absolute;
-  left: -25px;
-  top: 4px;
-  width: 14px; height: 14px;
-  border-radius: 50%;
-  border: 3px solid var(--white);
-  box-shadow: 0 0 0 2px var(--solar-gold);
-  background: var(--solar-gold);
-}
-.timeline-item.phase2 .timeline-dot { background: var(--energy-green); box-shadow: 0 0 0 2px var(--energy-green); }
-.timeline-item.phase3 .timeline-dot { background: var(--sky-blue); box-shadow: 0 0 0 2px var(--sky-blue); }
-.timeline-item.phase4 .timeline-dot { background: var(--accent-teal); box-shadow: 0 0 0 2px var(--accent-teal); }
-.timeline-head {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 8px;
-}
-.timeline-phase {
-  font-size: 10px;
-  text-transform: uppercase;
-  letter-spacing: 1.5px;
-  font-weight: 700;
-  padding: 3px 10px;
-  border-radius: 20px;
-  background: rgba(245,166,35,0.12);
-  color: var(--solar-gold);
-}
-.timeline-item.phase2 .timeline-phase { background: rgba(46,125,50,0.12); color: var(--energy-green); }
-.timeline-item.phase3 .timeline-phase { background: rgba(21,101,192,0.12); color: var(--sky-blue); }
-.timeline-item.phase4 .timeline-phase { background: rgba(0,137,123,0.12); color: var(--accent-teal); }
-.timeline-month {
-  font-weight: 600;
-  font-size: 14px;
-  color: var(--text-dark);
-}
-.timeline-card {
-  background: var(--white);
-  border-radius: var(--radius-sm);
-  padding: 18px;
-  box-shadow: var(--shadow);
-}
-.timeline-card-title {
-  font-weight: 700;
-  font-size: 15px;
-  margin-bottom: 12px;
-  color: var(--text-dark);
-}
-.task-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 8px;
-}
-.task-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 8px;
-  background: var(--light-gray);
-  border-radius: 6px;
-  padding: 8px 10px;
-  font-size: 12px;
-  color: var(--text-mid);
-}
-.task-tag {
-  display: inline-block;
-  font-size: 9px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  padding: 2px 6px;
-  border-radius: 4px;
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.tag-dm { background: rgba(21,101,192,0.12); color: var(--sky-blue); }
-.tag-design { background: rgba(245,166,35,0.12); color: #B8740A; }
-.tag-video { background: rgba(239,68,68,0.12); color: var(--danger); }
-.tag-ops { background: rgba(0,137,123,0.12); color: var(--accent-teal); }
-.tag-client { background: rgba(46,125,50,0.12); color: var(--energy-green); }
-
-/* ── PLATFORM ALLOCATION ── */
-.platform-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 16px;
-}
-.platform-card {
-  background: var(--white);
-  border-radius: var(--radius);
-  padding: 22px;
-  box-shadow: var(--shadow);
-}
-.platform-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 14px;
-}
-.platform-name {
-  font-weight: 700;
-  font-size: 15px;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-.platform-share {
-  font-size: 22px;
-  font-weight: 700;
-  font-family: 'Playfair Display', serif;
-  color: var(--solar-gold);
-}
-.platform-bar {
-  height: 6px;
-  background: var(--light-gray);
-  border-radius: 3px;
-  margin-bottom: 12px;
-  overflow: hidden;
-}
-.platform-fill {
-  height: 100%;
-  border-radius: 3px;
-  background: linear-gradient(90deg, var(--solar-gold), #E8960A);
-  transition: width 1s ease;
-}
-.p-instagram .platform-fill { background: linear-gradient(90deg, #E1306C, #833AB4); }
-.p-facebook .platform-fill { background: linear-gradient(90deg, #1877F2, #0D5AB2); }
-.p-linkedin .platform-fill { background: linear-gradient(90deg, #0A66C2, #064A8C); }
-.p-google .platform-fill { background: linear-gradient(90deg, #4285F4, #EA4335); }
-.p-youtube .platform-fill { background: linear-gradient(90deg, #FF0000, #CC0000); }
-.platform-audience {
-  font-size: 12px;
-  color: var(--text-light);
-  margin-bottom: 10px;
-}
-.platform-tactics {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-}
-.tactic-chip {
-  font-size: 11px;
-  background: var(--light-gray);
-  border-radius: 20px;
-  padding: 3px 10px;
-  color: var(--text-mid);
-}
-
-/* ── BUDGET TABLE ── */
-.budget-table-wrap {
-  background: var(--white);
-  border-radius: var(--radius);
-  overflow: hidden;
-  box-shadow: var(--shadow);
-}
-table.btable {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 13px;
-}
-table.btable thead {
-  background: var(--deep-navy);
-  color: var(--white);
-}
-table.btable thead th {
-  padding: 13px 16px;
-  text-align: left;
-  font-size: 11px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-}
-table.btable tbody td {
-  padding: 11px 16px;
-  border-bottom: 1px solid var(--border);
-  color: var(--text-mid);
-}
-table.btable tbody tr:last-child td {
-  border-bottom: none;
-}
-table.btable tbody tr:hover { background: #FAFBFC; }
-table.btable tfoot td {
-  padding: 13px 16px;
-  font-weight: 700;
-  color: var(--text-dark);
-  background: var(--cream);
-  border-top: 2px solid var(--solar-gold);
-}
-.amount { font-weight: 600; color: var(--text-dark); font-family: 'DM Sans', sans-serif; }
-.amount.total { color: var(--energy-green); }
-.badge-month {
-  display: inline-block;
-  font-size: 10px;
-  padding: 2px 8px;
-  border-radius: 12px;
-  font-weight: 600;
-}
-.bm1 { background: rgba(245,166,35,0.12); color: #B8740A; }
-.bm2 { background: rgba(46,125,50,0.12); color: var(--energy-green); }
-.bm3 { background: rgba(21,101,192,0.12); color: var(--sky-blue); }
-
-/* ── CONTENT COUNT TABLE ── */
-.content-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 16px;
-}
-.content-card {
-  background: var(--white);
-  border-radius: var(--radius);
-  padding: 20px;
-  box-shadow: var(--shadow);
-}
-.content-card-title {
-  font-weight: 700;
-  font-size: 13px;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  margin-bottom: 14px;
-  color: var(--text-dark);
-  padding-bottom: 10px;
-  border-bottom: 2px solid var(--solar-gold);
-}
-.content-row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 6px 0;
-  border-bottom: 1px solid var(--border);
-  font-size: 13px;
-}
-.content-row:last-child { border-bottom: none; }
-.c-label { color: var(--text-mid); }
-.c-count {
-  font-weight: 700;
-  color: var(--text-dark);
-  background: var(--light-gray);
-  padding: 2px 10px;
-  border-radius: 12px;
-  font-size: 13px;
-}
-
-/* ── TEAM ── */
-.team-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 16px;
-}
-.team-card {
-  background: var(--white);
-  border-radius: var(--radius);
-  padding: 20px;
-  box-shadow: var(--shadow);
-  text-align: center;
-}
-.team-avatar {
-  width: 52px; height: 52px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 22px;
-  margin: 0 auto 12px;
-  border: 3px solid var(--light-gray);
-}
-.team-role { font-weight: 700; font-size: 14px; margin-bottom: 4px; }
-.team-name { font-size: 12px; color: var(--text-light); margin-bottom: 10px; }
-.team-tasks { display: flex; flex-wrap: wrap; gap: 4px; justify-content: center; }
-.team-task-chip {
-  font-size: 10px;
-  background: var(--light-gray);
-  padding: 2px 8px;
-  border-radius: 10px;
-  color: var(--text-mid);
-}
-
-/* ── KPI DASHBOARD ── */
-.chart-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  margin-bottom: 20px;
-}
-.chart-box {
-  background: var(--white);
-  border-radius: var(--radius);
-  padding: 22px;
-  box-shadow: var(--shadow);
-}
-.chart-box-title {
-  font-weight: 700;
-  font-size: 14px;
-  margin-bottom: 16px;
-  color: var(--text-dark);
-}
-.chart-box canvas { max-height: 220px; }
-
-/* ── COMPETITOR TABLE ── */
-.comp-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px;
-}
-.comp-card {
-  background: var(--white);
-  border-radius: var(--radius);
-  padding: 22px;
-  box-shadow: var(--shadow);
-}
-.comp-head { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; }
-.comp-logo {
-  width: 40px; height: 40px;
-  border-radius: 8px;
-  display: flex; align-items: center; justify-content: center;
-  font-size: 18px;
-}
-.comp-name { font-weight: 700; font-size: 15px; }
-.comp-tag { font-size: 11px; color: var(--text-light); }
-.comp-row {
-  display: flex;
-  justify-content: space-between;
-  padding: 7px 0;
-  border-bottom: 1px solid var(--border);
-  font-size: 13px;
-}
-.comp-row:last-child { border-bottom: none; }
-.comp-k { color: var(--text-mid); }
-.comp-v { font-weight: 600; }
-.badge-win { color: var(--success); }
-.badge-risk { color: var(--danger); }
-
-/* ── WEBSITE AUDIT ── */
-.audit-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 12px;
-}
-.audit-item {
-  background: var(--white);
-  border-radius: var(--radius-sm);
-  padding: 16px;
-  box-shadow: var(--shadow);
-  display: flex;
-  gap: 12px;
-  align-items: flex-start;
-}
-.audit-icon {
-  width: 32px; height: 32px;
-  border-radius: 8px;
-  display: flex; align-items: center; justify-content: center;
-  font-size: 16px;
-  flex-shrink: 0;
-}
-.audit-icon.red { background: rgba(239,68,68,0.1); }
-.audit-icon.orange { background: rgba(245,158,11,0.1); }
-.audit-icon.green { background: rgba(34,197,94,0.1); }
-.audit-text { font-size: 13px; color: var(--text-mid); line-height: 1.5; }
-.audit-text strong { color: var(--text-dark); display: block; margin-bottom: 3px; }
-
-/* ── SPONSORSHIP PACKAGES ── */
-.pkg-grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 16px;
-}
-.pkg-card {
-  border-radius: var(--radius);
-  padding: 24px 20px;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
-}
-.pkg-card.title { background: linear-gradient(135deg, var(--solar-gold), #D4880A); color: white; }
-.pkg-card.co { background: linear-gradient(135deg, var(--energy-green), #1B5E20); color: white; }
-.pkg-card.associate { background: linear-gradient(135deg, var(--sky-blue), #0D47A1); color: white; }
-.pkg-card.media { background: linear-gradient(135deg, var(--accent-teal), #004D40); color: white; }
-.pkg-card.silver { background: linear-gradient(135deg, #C7CDD4, #7A8793); color: white; }
-.pkg-card.bronze { background: linear-gradient(135deg, #B87333, #7A4A20); color: white; }
-.pkg-card.ev { background: linear-gradient(135deg, #8BC34A, #33691E); color: white; }
-.pkg-label { font-size: 11px; letter-spacing: 2px; text-transform: uppercase; opacity: 0.75; margin-bottom: 10px; }
-.pkg-name { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; margin-bottom: 4px; }
-.pkg-price { font-size: 28px; font-weight: 700; margin-bottom: 14px; }
-.pkg-feature {
-  font-size: 12px;
-  opacity: 0.85;
-  margin-bottom: 6px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-}
-
-/* ── RISK REGISTER ── */
-.risk-table-wrap { background: var(--white); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
-.risk-badge {
-  display: inline-block;
-  font-size: 10px;
-  font-weight: 700;
-  padding: 3px 10px;
-  border-radius: 12px;
-  text-transform: uppercase;
-}
-.risk-high { background: rgba(239,68,68,0.1); color: var(--danger); }
-.risk-med { background: rgba(245,158,11,0.1); color: var(--warning); }
-.risk-low { background: rgba(34,197,94,0.1); color: var(--success); }
-
-/* ── FOOTER ── */
-.footer {
-  background: var(--deep-navy);
-  color: rgba(255,255,255,0.6);
-  text-align: center;
-  padding: 30px 24px;
-  font-size: 12px;
-  margin-top: 40px;
-}
-.footer strong { color: var(--solar-gold); }
+/* ── CARDS ── */
+.card{background:var(--white);border-radius:var(--r);padding:20px;box-shadow:var(--sh);}
+.card-h{font-weight:700;font-size:14px;margin-bottom:6px;}
+.card-p{font-size:12px;color:var(--mid);line-height:1.6;}
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;}
+.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;}
+.gflex{display:flex;flex-wrap:wrap;gap:12px;}
 
 /* ── ALERT ── */
-.alert {
-  background: linear-gradient(135deg, rgba(245,166,35,0.08), rgba(245,166,35,0.03));
-  border: 1px solid rgba(245,166,35,0.25);
-  border-radius: var(--radius-sm);
-  padding: 14px 18px;
-  font-size: 13px;
-  color: var(--text-mid);
-  margin-bottom: 20px;
-  display: flex;
-  gap: 10px;
-  align-items: flex-start;
-}
-.alert strong { color: var(--text-dark); }
+.alert{display:flex;gap:10px;background:rgba(245,166,35,0.06);border:1px solid rgba(245,166,35,0.2);border-radius:var(--rs);padding:13px 16px;font-size:12px;color:var(--mid);line-height:1.6;margin-bottom:18px;}
+.alert strong{color:var(--text);}
+.alert.green{background:rgba(22,163,74,0.05);border-color:rgba(22,163,74,0.2);}
+.alert.blue{background:rgba(21,101,192,0.05);border-color:rgba(21,101,192,0.2);}
+
+/* ── PRIORITY CHIPS ── */
+.chip{display:inline-block;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;padding:2px 9px;border-radius:10px;}
+.chip-g{background:rgba(22,163,74,0.1);color:var(--success);}
+.chip-o{background:rgba(217,119,6,0.1);color:var(--warn);}
+.chip-b{background:rgba(21,101,192,0.1);color:var(--sky);}
+.chip-t{background:rgba(0,137,123,0.1);color:var(--teal);}
+.chip-navy{background:rgba(13,27,42,0.08);color:var(--navy);}
+
+/* ── AUDIENCE ── */
+.aud-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;}
+.aud-card{background:var(--white);border-radius:var(--r);padding:18px;box-shadow:var(--sh);border-top:3px solid var(--gold);}
+.aud-card.p1{border-top-color:var(--gold);}
+.aud-card.p2{border-top-color:var(--green);}
+.aud-card.p3{border-top-color:var(--sky);}
+.aud-card.p4{border-top-color:var(--teal);}
+.aud-card.p5{border-top-color:var(--warn);}
+.aud-pri{font-size:9px;text-transform:uppercase;letter-spacing:1.5px;font-weight:700;margin-bottom:8px;}
+.aud-card.p1 .aud-pri{color:var(--gold-dk);}
+.aud-card.p2 .aud-pri{color:var(--green);}
+.aud-card.p3 .aud-pri{color:var(--sky);}
+.aud-card.p4 .aud-pri{color:var(--teal);}
+.aud-card.p5 .aud-pri{color:var(--warn);}
+.aud-name{font-weight:700;font-size:13px;margin-bottom:5px;}
+.aud-desc{font-size:12px;color:var(--mid);line-height:1.5;}
+
+/* ── TIMELINE ── */
+.tl-wrap{position:relative;padding-left:28px;}
+.tl-wrap::before{content:'';position:absolute;left:8px;top:0;bottom:0;width:2px;background:linear-gradient(to bottom,var(--gold),var(--green),var(--sky),var(--teal));}
+.tl-item{position:relative;margin-bottom:22px;}
+.tl-dot{position:absolute;left:-23px;top:5px;width:13px;height:13px;border-radius:50%;border:2.5px solid var(--white);box-shadow:0 0 0 2px var(--gold);background:var(--gold);}
+.tl-item.p2 .tl-dot{background:var(--green);box-shadow:0 0 0 2px var(--green);}
+.tl-item.p3 .tl-dot{background:var(--sky);box-shadow:0 0 0 2px var(--sky);}
+.tl-item.p4 .tl-dot{background:var(--teal);box-shadow:0 0 0 2px var(--teal);}
+.tl-head{display:flex;align-items:center;gap:8px;margin-bottom:8px;}
+.tl-badge{font-size:9px;text-transform:uppercase;letter-spacing:1.5px;font-weight:700;padding:2px 9px;border-radius:10px;background:rgba(245,166,35,0.12);color:var(--gold-dk);}
+.tl-item.p2 .tl-badge{background:rgba(46,125,50,0.12);color:var(--green);}
+.tl-item.p3 .tl-badge{background:rgba(21,101,192,0.12);color:var(--sky);}
+.tl-item.p4 .tl-badge{background:rgba(0,137,123,0.12);color:var(--teal);}
+.tl-period{font-size:13px;font-weight:600;color:var(--text);}
+.tl-card{background:var(--white);border-radius:var(--rs);padding:16px 18px;box-shadow:var(--sh);}
+.tl-card-h{font-weight:700;font-size:13px;margin-bottom:10px;}
+.task-wrap{display:flex;flex-wrap:wrap;gap:6px;}
+.task{display:flex;align-items:flex-start;gap:6px;background:var(--gray);border-radius:5px;padding:5px 9px;font-size:11px;color:var(--mid);}
+.tag{font-size:9px;font-weight:700;text-transform:uppercase;padding:1px 6px;border-radius:3px;flex-shrink:0;}
+.tag-dm{background:rgba(21,101,192,0.12);color:var(--sky);}
+.tag-d{background:rgba(245,166,35,0.12);color:var(--gold-dk);}
+.tag-v{background:rgba(220,38,38,0.12);color:var(--danger);}
+.tag-cl{background:rgba(22,163,74,0.12);color:var(--success);}
+.tag-it{background:rgba(0,137,123,0.12);color:var(--teal);}
+
+/* ── PLATFORM ── */
+.plat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;}
+.plat-card{background:var(--white);border-radius:var(--r);padding:18px;box-shadow:var(--sh);}
+.plat-h{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;}
+.plat-name{font-weight:700;font-size:13px;}
+.plat-pct{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;color:var(--gold);}
+.plat-bar{height:5px;background:var(--gray);border-radius:3px;margin-bottom:10px;overflow:hidden;}
+.plat-fill{height:100%;border-radius:3px;transition:width 1s ease;}
+.plat-aud{font-size:11px;color:var(--lt);margin-bottom:8px;}
+.plat-chips{display:flex;flex-wrap:wrap;gap:5px;}
+.plat-chip{font-size:10px;background:var(--gray);border-radius:10px;padding:2px 9px;color:var(--mid);}
+
+/* ── PRE-REG FEATURE ── */
+.prereg-box{background:linear-gradient(135deg,var(--navy) 0%,#122030 100%);border-radius:var(--r);padding:28px;color:var(--white);margin-bottom:20px;}
+.prereg-eye{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:10px;font-weight:700;}
+.prereg-h{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;margin-bottom:10px;}
+.prereg-desc{font-size:13px;color:rgba(255,255,255,0.6);line-height:1.7;margin-bottom:20px;max-width:640px;}
+.prereg-steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px;}
+.prereg-step{background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.08);border-radius:8px;padding:14px;}
+.ps-num{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;color:var(--gold);display:block;margin-bottom:5px;}
+.ps-text{font-size:12px;color:rgba(255,255,255,0.6);line-height:1.5;}
+
+/* ── COMPARISON PRICING ── */
+.comp-wrap{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:24px;}
+.pkg{border-radius:var(--r);overflow:hidden;box-shadow:var(--sh-lg);}
+.pkg-head{padding:24px 22px;background:var(--navy);}
+.pkg-head.gold{background:linear-gradient(135deg,var(--gold-dk),#B8740A);}
+.pkg-eye{font-size:9px;letter-spacing:2px;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-bottom:6px;font-weight:600;}
+.pkg-head.gold .pkg-eye{color:rgba(255,255,255,0.7);}
+.pkg-name{font-family:'Playfair Display',serif;font-size:24px;font-weight:700;color:var(--white);margin-bottom:4px;}
+.pkg-price{font-family:'Playfair Display',serif;font-size:38px;font-weight:900;color:var(--white);line-height:1;}
+.pkg-head.gold .pkg-price{color:var(--navy);}
+.pkg-price-note{font-size:11px;color:rgba(255,255,255,0.5);margin-top:4px;}
+.pkg-head.gold .pkg-price-note{color:rgba(13,27,42,0.6);}
+.pkg-body{background:var(--white);padding:20px;}
+.pkg-breakdown{margin-bottom:16px;}
+.pkg-row{display:flex;justify-content:space-between;padding:7px 0;border-bottom:1px solid var(--border);font-size:12px;}
+.pkg-row:last-child{border-bottom:none;}
+.pkg-row-lbl{color:var(--mid);}
+.pkg-row-val{font-weight:600;color:var(--text);}
+.pkg-del-h{font-size:11px;text-transform:uppercase;letter-spacing:1px;font-weight:700;color:var(--lt);margin-bottom:10px;}
+.pkg-del-list{display:flex;flex-direction:column;gap:5px;}
+.pkg-del-item{display:flex;align-items:flex-start;gap:7px;font-size:12px;color:var(--mid);}
+.pkg-del-item .tick{color:var(--success);flex-shrink:0;font-weight:700;}
+.pkg-del-item .cross{color:var(--danger);flex-shrink:0;font-weight:700;}
+.pkg-kpi-h{font-size:11px;text-transform:uppercase;letter-spacing:1px;font-weight:700;color:var(--lt);margin:14px 0 8px;}
+.kpi-pill-wrap{display:flex;flex-wrap:wrap;gap:6px;}
+.kpi-pill{font-size:11px;background:var(--gray);border-radius:10px;padding:3px 10px;color:var(--mid);}
+.kpi-pill strong{color:var(--text);}
+
+/* Comparison table */
+.comp-table{width:100%;border-collapse:collapse;font-size:12px;background:var(--white);border-radius:var(--r);overflow:hidden;box-shadow:var(--sh);}
+.comp-table thead th{padding:11px 14px;text-align:left;font-size:10px;letter-spacing:1px;text-transform:uppercase;font-weight:700;color:var(--lt);background:var(--navy);color:rgba(255,255,255,0.6);}
+.comp-table thead th:nth-child(2){color:rgba(255,255,255,0.8);}
+.comp-table thead th:nth-child(3){background:var(--gold-dk);color:rgba(255,255,255,0.9);}
+.comp-table tbody td{padding:10px 14px;border-bottom:1px solid var(--border);color:var(--mid);}
+.comp-table tbody tr:last-child td{border-bottom:none;}
+.comp-table tbody td:first-child{color:var(--text);font-weight:500;}
+.comp-table tbody td:nth-child(3){background:rgba(245,166,35,0.03);}
+.yn-y{color:var(--success);font-weight:700;}
+.yn-n{color:var(--danger);font-weight:700;}
+.yn-p{color:var(--warn);font-weight:600;}
+
+/* ── TOOLS ── */
+.tools-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;}
+.tool-card{background:var(--white);border-radius:var(--rs);padding:15px 16px;box-shadow:var(--sh);display:flex;gap:12px;align-items:flex-start;}
+.tool-icon{width:34px;height:34px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0;}
+.tool-body{}
+.tool-name{font-weight:700;font-size:13px;margin-bottom:2px;}
+.tool-purpose{font-size:11px;color:var(--lt);line-height:1.4;}
+.tool-tag{font-size:9px;text-transform:uppercase;letter-spacing:0.5px;color:var(--gold-dk);font-weight:700;margin-top:3px;}
+
+/* ── EXEC PLAN ── */
+.exec-wrap{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+.exec-col{display:flex;flex-direction:column;gap:10px;}
+.exec-col-h{font-size:12px;text-transform:uppercase;letter-spacing:1.5px;font-weight:700;color:var(--lt);margin-bottom:4px;padding-bottom:8px;border-bottom:2px solid var(--gold);}
+.exec-item{background:var(--white);border-radius:var(--rs);padding:13px 15px;box-shadow:var(--sh);}
+.exec-item-h{font-weight:600;font-size:12px;margin-bottom:4px;color:var(--text);}
+.exec-item-p{font-size:11px;color:var(--lt);line-height:1.5;}
+
+/* ── CONFIRM BOX ── */
+.confirm-box{background:linear-gradient(135deg,var(--green),#1B5E20);border-radius:var(--r);padding:32px;color:var(--white);text-align:center;}
+.confirm-yes{font-family:'Playfair Display',serif;font-size:42px;font-weight:900;color:var(--gold);margin-bottom:6px;}
+.confirm-h{font-family:'Playfair Display',serif;font-size:22px;font-weight:700;margin-bottom:10px;}
+.confirm-desc{font-size:13px;color:rgba(255,255,255,0.7);max-width:560px;margin:0 auto 22px;line-height:1.7;}
+.confirm-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;max-width:640px;margin:0 auto;}
+.conf-item{background:rgba(255,255,255,0.08);border-radius:8px;padding:12px;font-size:12px;color:rgba(255,255,255,0.75);line-height:1.5;}
+.conf-item strong{color:var(--white);display:block;margin-bottom:2px;}
+
+/* ── TABLE COMMON ── */
+.tbl{width:100%;border-collapse:collapse;font-size:12px;}
+.tbl thead th{padding:9px 13px;text-align:left;font-size:10px;letter-spacing:1px;text-transform:uppercase;font-weight:700;background:var(--navy);color:rgba(255,255,255,0.6);}
+.tbl tbody td{padding:9px 13px;border-bottom:1px solid var(--border);color:var(--mid);}
+.tbl tbody tr:last-child td{border-bottom:none;}
+.tbl tbody tr:hover{background:#FAFBFC;}
+.tbl tfoot td{padding:10px 13px;font-weight:700;color:var(--text);background:rgba(245,166,35,0.07);border-top:2px solid var(--gold);}
+.amt{font-weight:600;color:var(--text);}
+.amt-tot{color:var(--green);font-weight:700;}
+
+/* ── FOOTER ── */
+.footer{background:var(--navy);color:rgba(255,255,255,0.5);text-align:center;padding:28px 32px;font-size:11px;line-height:1.8;}
+.footer strong{color:var(--gold);}
 
 /* ── RESPONSIVE ── */
-@media (max-width: 900px) {
-  .pkg-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .hero-grid { grid-template-columns: 1fr; }
-  .countdown-card { display: none; }
-  .nav-tabs { display: none; }
-  .chart-grid { grid-template-columns: 1fr; }
-  .comp-grid { grid-template-columns: 1fr; }
-  .hero { padding: 40px 20px; }
+@media(max-width:900px){
+  .hero-inner{grid-template-columns:1fr;}
+  .ev-card{display:none;}
+  .g2,.g3,.g4{grid-template-columns:1fr;}
+  .comp-wrap{grid-template-columns:1fr;}
+  .exec-wrap{grid-template-columns:1fr;}
+  .nav-links{display:none;}
+  .wrap{padding:0 20px;}
 }
-@media (max-width: 600px) {
-  .pkg-grid { grid-template-columns: 1fr; }
-  .task-grid { grid-template-columns: 1fr; }
-  .kpi-row { grid-template-columns: repeat(2, 1fr); }
-}
-
-/* progress bars */
-.prog-wrap { margin-top: 12px; }
-.prog-item { margin-bottom: 10px; }
-.prog-label { display: flex; justify-content: space-between; font-size: 12px; color: var(--text-mid); margin-bottom: 4px; }
-.prog-bar { height: 7px; background: var(--light-gray); border-radius: 4px; overflow: hidden; }
-.prog-fill { height: 100%; border-radius: 4px; background: linear-gradient(90deg, var(--solar-gold), #D48806); }
-.prog-fill.green { background: linear-gradient(90deg, var(--energy-green), #388E3C); }
-.prog-fill.blue { background: linear-gradient(90deg, var(--sky-blue), #1976D2); }
-.prog-fill.teal { background: linear-gradient(90deg, var(--accent-teal), #26A69A); }
 </style>
 </head>
 <body>
 
-<!-- TOPBAR -->
-<nav class="topbar">
-  <div class="topbar-brand">
-    <div class="topbar-logo">☀️</div>
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-brand">
+    <div class="nav-dot">☀️</div>
     <div>
-      <div class="topbar-title">Masters Kerala RE Expo 2026</div>
-      <div class="topbar-sub">Marketing Masterplan</div>
+      <div class="nav-name">Masters Kerala RE Expo 2026</div>
+      <div class="nav-sub">Campaign Proposal · Revised</div>
     </div>
   </div>
-  <ul class="nav-tabs">
-    <li><a href="#strategy" class="active">Strategy</a></li>
-    <li><a href="#timeline">Timeline</a></li>
-    <li><a href="#platforms">Platforms</a></li>
-    <li><a href="#content">Content</a></li>
-    <li><a href="#budget">Budget</a></li>
-    <li><a href="#team">Team</a></li>
-    <li><a href="#website">Website</a></li>
-    <li><a href="#dashboard">Dashboard</a></li>
-    <li><a href="#risks">Risks</a></li>
-  </ul>
-  <div class="agency-badge">
-    Prepared by <span>FlumenX · Misc Archive</span>
+  <div class="nav-links">
+    <a href="#brief">Brief</a>
+    <a href="#audiences">Audiences</a>
+    <a href="#prereg">Pre-Reg</a>
+    <a href="#timeline">Timeline</a>
+    <a href="#platforms">Platforms</a>
+    <a href="#packages">Packages</a>
+    <a href="#tools">Tools</a>
+    <a href="#exec">Execution</a>
+    <a href="#confirm">Confirm</a>
   </div>
+  <div class="nav-confirm">FlumenX × Masters</div>
 </nav>
-
-<div class="main">
 
 <!-- HERO -->
 <div class="hero">
-  <div class="hero-grid">
-    <div>
-      <div class="hero-eyebrow">🏆 4th Annual Edition — Marketing Masterplan 2026</div>
-      <h1>Kerala's <em>Biggest</em> Renewable Energy Expo Deserves Kerala's <em>Boldest</em> Campaign</h1>
-      <p class="hero-desc">A full-stack 3-month digital + ground marketing strategy for Masters Kerala RE Expo — Sep 25–27, 2026 at LuLu Mall, Trivandrum. Targeting 20,000+ footfall, 150+ vendor stalls, global sponsorships, and GenZ audience penetration.</p>
-      <div class="hero-tags">
-        <span class="hero-tag">🎯 3-Month Sprint Plan</span>
-        <span class="hero-tag">📱 5-Platform Campaign</span>
-        <!-- <span class="hero-tag">💰 Full Budget Breakdown</span> -->
-        <span class="hero-tag">👥 Team Structure</span>
-        <span class="hero-tag">📊 Live KPI Dashboard</span>
-        <span class="hero-tag">🔥 GenZ Activation</span>
+  <div class="wrap">
+    <div class="hero-inner">
+      <div>
+        <div class="hero-eye">Revised Proposal · Submitted July 2026</div>
+        <h1 class="hero-h1">Kerala's Solar Economy<br>Needs <em>Real Buyers</em><br>in the Room.</h1>
+        <p class="hero-desc">A performance-first campaign built around vendor registrations, sponsorship conversion, and genuine consumer walk-ins — families, buyers, and business owners who can create real cashflow at the expo floor.</p>
+        <div class="hero-flags">
+          <span class="hflag">📅 Jul 18 – Sep 29</span>
+          <span class="hflag">🏢 LuLu Mall Trivandrum</span>
+          <span class="hflag">🎯 B2B + Genuine Consumer Walk-ins</span>
+          <span class="hflag">📲 Pre-Registration + Calendar Reminder System</span>
+          <span class="hflag">💡 2 Package Options</span>
+        </div>
       </div>
-    </div>
-    <div class="countdown-card">
-      <div class="countdown-title">⚡ Event Countdown</div>
-      <div class="countdown-date">Sep 25–27, 2026</div>
-      <div class="countdown-venue">LuLu Mall, Trivandrum, Kerala</div>
-      <div class="countdown-grid" id="countdown-grid">
-        <div class="count-box"><span class="count-num" id="days">97</span><span class="count-lbl">Days</span></div>
-        <div class="count-box"><span class="count-num" id="hours">—</span><span class="count-lbl">Hours</span></div>
-        <div class="count-box"><span class="count-num" id="mins">—</span><span class="count-lbl">Mins</span></div>
-        <div class="count-box"><span class="count-num" id="secs">—</span><span class="count-lbl">Secs</span></div>
-      </div>
-      <div class="event-stats">
-        <div class="ev-stat"><div class="ev-stat-num">20K+</div><div class="ev-stat-lbl">Target Walk-ins</div></div>
-        <div class="ev-stat"><div class="ev-stat-num">150+</div><div class="ev-stat-lbl">Vendor Stalls</div></div>
-        <div class="ev-stat"><div class="ev-stat-num">700+</div><div class="ev-stat-lbl">MNRE Members</div></div>
+      <div class="ev-card">
+        <div class="ev-date">Sep 25–27, 2026</div>
+        <div class="ev-venue">LuLu Mall, Trivandrum · 50,000 sq ft</div>
+        <div class="ev-grid">
+          <div class="ev-stat"><span class="ev-num">700+</span><span class="ev-lbl">MNRE Members</span></div>
+          <div class="ev-stat"><span class="ev-num">150+</span><span class="ev-lbl">Stalls</span></div>
+          <div class="ev-stat"><span class="ev-num">20K</span><span class="ev-lbl">Target Footfall</span></div>
+        </div>
+        <div class="ev-timeline">
+          <div class="ev-tl-row"><span class="ev-tl-lbl">Campaign Starts</span><span class="ev-tl-val">Jul 18, 2026</span></div>
+          <div class="ev-tl-row"><span class="ev-tl-lbl">Expo Days</span><span class="ev-tl-val">Sep 25–27 (Fri–Sun)</span></div>
+          <div class="ev-tl-row"><span class="ev-tl-lbl">Post-Event Close</span><span class="ev-tl-val">Sep 29, 2026</span></div>
+          <div class="ev-tl-row"><span class="ev-tl-lbl">Total Days</span><span class="ev-tl-val" style="color:var(--gold);">73 Days</span></div>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
-<div class="section">
+<!-- ══ BRIEF ══ -->
+<div class="section" id="brief">
+<div class="wrap">
+  <div class="section-eye">01 — Updated Brief</div>
+  <div class="section-h">What This Campaign Is Really About</div>
+  <p class="section-sub">Based on the internal meeting with Masters leadership, here is the refined campaign mandate — stripped of what isn't a priority, built around what is.</p>
 
-<!-- ── SECTION: STRATEGY ── -->
-<div class="section-block" id="strategy">
-  <div class="section-label">Strategic Foundation</div>
-  <div class="section-title">Big Idea: "The Future Walks In Here"</div>
-  <p class="section-sub">Position Masters Kerala RE Expo as the career-defining, business-making event of 2026 for anyone in Kerala's energy, tech, and startup ecosystem. Not just a trade show — a movement.</p>
+  <div class="alert green">
+    <span>✅</span>
+    <span><strong>Core mandate:</strong> Drive vendor stall registrations and sponsorship conversations first. Then build genuine consumer walk-in traffic — families, homeowners, solar buyers, sector professionals — who represent real cashflow potential on the expo floor. Career and student positioning is secondary and supporting only.</span>
+  </div>
+
+  <div class="g3" style="margin-bottom:24px;">
+    <div class="card" style="border-top:3px solid var(--gold);">
+      <div style="font-size:18px;margin-bottom:10px;">🤝</div>
+      <div class="card-h">Priority 1 — B2B Engine</div>
+      <div class="card-p">Identify and reach international + domestic big brands (Adani, Havells, SolarEdge, Waaree, Jinko, etc.) through LinkedIn outreach, targeted InMail, and sponsor deck distribution. Vendor stall conversions through WhatsApp network + Meta Lead Ads.</div>
+    </div>
+    <div class="card" style="border-top:3px solid var(--green);">
+      <div style="font-size:18px;margin-bottom:10px;">🏠</div>
+      <div class="card-h">Priority 2 — Consumer Walk-ins</div>
+      <div class="card-p">Families with electricity bills above ₹1,500/month are the primary consumer target. Solar is directly relevant to their bills, their homes, their businesses. These are buyers — not just visitors. Facebook + WhatsApp community groups are the channels.</div>
+    </div>
+    <div class="card" style="border-top:3px solid var(--sky);">
+      <div style="font-size:18px;margin-bottom:10px;">🎓</div>
+      <div class="card-h">Supporting — Knowledge Seekers</div>
+      <div class="card-p">Seminars, talk shows, product demonstrations, and material showcases attract a knowledge-seeking crowd that adds credibility, content, and footfall. Solar is cross-sector — agriculture, hospitality, real estate, manufacturing all benefit.</div>
+    </div>
+  </div>
 
   <div class="alert">
     <span>⚡</span>
-    <span><strong>Core Insight:</strong> Previous campaigns over-indexed on Instagram while underpenetrating Facebook (where B2B decision-makers 35–55 live) and LinkedIn (where sponsors + vendor procurement happens). We fix the platform mix with a 50-30-20 allocation and add a GenZ hook that makes this aspirational, not industrial.</span>
+    <span><strong>Key insight on LuLu Footfall:</strong> Masters has invested ~₹10L in LuLu Mall as the venue — partly for its built-in footfall. That footfall is passive. Our campaign converts it into active expo attendance. The venue gives us proximity to Trivandrum's purchasing families — our job is to make them walk through the expo gate, not just past it.</span>
   </div>
+</div>
+</div>
 
-  <div class="kpi-row">
-    <div class="kpi-card">
-      <div class="kpi-lbl">Target Footfall</div>
-      <div class="kpi-val">20K+</div>
-      <div class="kpi-note">2x last year's 10K</div>
-      <div class="kpi-icon">👣</div>
-    </div>
-    <div class="kpi-card green">
-      <div class="kpi-lbl">Vendor Stalls</div>
-      <div class="kpi-val">150+</div>
-      <div class="kpi-note">Min confirmed pre-expo</div>
-      <div class="kpi-icon">🏢</div>
-    </div>
-    <div class="kpi-card blue">
-      <div class="kpi-lbl">Sponsor Targets</div>
-      <div class="kpi-val">6–8</div>
-      <div class="kpi-note">Title + Co + Associate</div>
-      <div class="kpi-icon">🤝</div>
-    </div>
-    <div class="kpi-card teal">
-      <div class="kpi-lbl">Social Reach</div>
-      <div class="kpi-val">2L+</div>
-      <div class="kpi-note">Paid impressions, 3 months</div>
-      <div class="kpi-icon">📡</div>
-    </div>
-    <div class="kpi-card navy">
-      <div class="kpi-lbl">Recommended Ad Spend</div>
-      <div class="kpi-val">₹3.5L</div>
-      <div class="kpi-note">Meta + Google + LinkedIn</div>
-      <div class="kpi-icon">💰</div>
-    </div>
-    <div class="kpi-card">
-      <div class="kpi-lbl">Total Campaign Budget</div>
-      <div class="kpi-val">₹8.5L</div>
-      <div class="kpi-note">Full 3-month recommended plan</div>
-      <div class="kpi-icon">📋</div>
-    </div>
-  </div>
+<!-- ══ AUDIENCES ══ -->
+<div class="section" id="audiences">
+<div class="wrap">
+  <div class="section-eye">02 — Audience Architecture</div>
+  <div class="section-h">Five Audiences. One Expo. Different Messages.</div>
+  <p class="section-sub">Each audience needs a different creative angle, a different channel, and a different call to action. Generic "come to the expo" messaging reaches none of them effectively.</p>
 
-  <div class="pillars-grid">
-    <div class="pillar-card">
-      <div class="pillar-icon">🌞</div>
-      <div class="pillar-title">Brand Narrative — "Solar Is the Career"</div>
-      <div class="pillar-desc">Build a story: Kerala's solar boom = 10,000+ new jobs, ₹2,000 Cr industry. This expo is where you break in. Aspirational content for GenZ targeting career, startup, expand narratives.</div>
+  <div class="aud-grid">
+    <div class="aud-card p1">
+      <div class="aud-pri">🥇 Primary — B2B</div>
+      <div class="aud-name">International & Domestic Brands / Sponsors</div>
+      <div class="aud-desc">Solar OEMs, EPC companies, inverter brands, global players. Reached via LinkedIn InMail, email outreach, trade press. Message: "20K+ decision-makers and buyers walking past your stall."</div>
     </div>
-    <div class="pillar-card">
-      <div class="pillar-icon">📱</div>
-      <div class="pillar-title">Platform Rebalancing</div>
-      <div class="pillar-desc">Instagram stays (GenZ + awareness). Facebook activates (35–55, B2C + local community). LinkedIn scales up (sponsors, vendors, B2B). Google Search captures intent. YouTube builds authority.</div>
+    <div class="aud-card p1">
+      <div class="aud-pri">🥇 Primary — B2B</div>
+      <div class="aud-name">Vendor / Exhibitor (Stall Buyers)</div>
+      <div class="aud-desc">Local and regional solar distributors, installers, product companies. WhatsApp broadcast to 700+ MNRE member network is the #1 conversion channel here. Meta Lead Ads for new reach.</div>
     </div>
-    <div class="pillar-card">
-      <div class="pillar-icon">🎯</div>
-      <div class="pillar-title">3-Audience Segmented Campaigns</div>
-      <div class="pillar-desc">Audience A: B2B (vendors, sponsors) via LinkedIn + email. Audience B: GenZ/youth (college students, job seekers, startups) via Reels + YouTube. Audience C: General public (free walkthrough) via Facebook + Google.</div>
+    <div class="aud-card p2">
+      <div class="aud-pri">🥈 Primary — Consumer</div>
+      <div class="aud-name">Kerala Families (Bill > ₹1,500/month)</div>
+      <div class="aud-desc">Homeowners who pay high electricity bills and are solar-curious. Biggest cashflow audience at the expo. Facebook + community group campaigns in Malayalam. Message: "See how solar cuts your electricity bill — free entry."</div>
     </div>
-    <div class="pillar-card">
-      <div class="pillar-icon">🔥</div>
-      <div class="pillar-title">GenZ Activation Program</div>
-      <div class="pillar-desc">"Solar Startup Challenge" contest. College ambassador program across 15+ Kerala colleges. Hackathon tie-in. Evening entertainment creates shareable moments. FOMO-driven countdown content.</div>
+    <div class="aud-card p3">
+      <div class="aud-pri">🥉 Secondary</div>
+      <div class="aud-name">Sector Professionals</div>
+      <div class="aud-desc">Agriculture, hospitality, real estate, manufacturing — all solar-connected. LinkedIn and Facebook targeting by job title/industry. Seminar and product demo content appeals to this group.</div>
     </div>
-    <div class="pillar-card">
-      <div class="pillar-icon">📰</div>
-      <div class="pillar-title">PR + Media + Influencer Layer</div>
-      <div class="pillar-desc">Kerala media (Manorama, Mathrubhumi, Asianet), national trade press (SolarQuarter, Mercom India), 10+ Kerala tech/energy influencers, Ministry endorsements, MNRE press releases.</div>
-    </div>
-    <div class="pillar-card">
-      <div class="pillar-icon">🤖</div>
-      <div class="pillar-title">AI-Assisted Content Engine</div>
-      <div class="pillar-desc">Batch-produce 90+ days of content in 3 weekly sprints. Malayalam + English bilingual content for wider Kerala reach. WhatsApp broadcast to Masters 700+ member network from Day 1.</div>
+    <div class="aud-card p4">
+      <div class="aud-pri">Supporting</div>
+      <div class="aud-name">Knowledge Seekers / General Public</div>
+      <div class="aud-desc">Attend for seminars, talk shows, product demos. Adds credibility and footfall count. Reached via Instagram Reels, YouTube, and the pre-registration calendar system. Free entry is the hook.</div>
     </div>
   </div>
 </div>
+</div>
 
-<!-- ── SECTION: TIMELINE ── -->
-<div class="section-block" id="timeline">
-  <div class="section-label">Execution Roadmap</div>
-  <div class="section-title">3-Month Sprint: June 21 → September 27</div>
-  <p class="section-sub">Every day counts. Structured in 4 phases — Ignite, Amplify, Convert, Dominate — aligned to sponsor outreach, vendor registration, and public awareness cycles.</p>
+<!-- ══ PRE-REGISTRATION ══ -->
+<div class="section" id="prereg">
+<div class="wrap">
+  <div class="section-eye">03 — Signature Feature</div>
+  <div class="section-h">The Pre-Registration + Calendar Reminder System</div>
+  <p class="section-sub">The biggest drop-off in expo attendance: people see the ad, get interested, intend to come — and forget. This system eliminates that.</p>
 
-  <div class="timeline">
+  <div class="prereg-box">
+    <div class="prereg-eye">💡 Anoop's Idea — Recommended for Implementation</div>
+    <div class="prereg-h">"I'm Coming" → Auto Calendar Event → Reminder Chain</div>
+    <div class="prereg-desc">When a user clicks a pre-registration link (from any ad, post, story, or WhatsApp message), they land on a simple page with one choice: "Yes, I'm visiting Masters Expo 2026." One click automatically adds the event to their Google Calendar / Apple Calendar with a location pin (LuLu Mall) and sends 3 automated reminders: 7 days before, 2 days before, morning of. This converts casual interest into committed attendance.</div>
+    <div class="prereg-steps">
+      <div class="prereg-step"><span class="ps-num">1</span><span class="ps-text">User sees ad/post → clicks pre-registration link</span></div>
+      <div class="prereg-step"><span class="ps-num">2</span><span class="ps-text">Lands on simple "I'm Coming" page — name + phone only</span></div>
+      <div class="prereg-step"><span class="ps-num">3</span><span class="ps-text">One click → Google/Apple Calendar event added automatically</span></div>
+      <div class="prereg-step"><span class="ps-num">4</span><span class="ps-text">Automated WhatsApp reminder: 7 days, 2 days, morning of event</span></div>
+      <div class="prereg-step"><span class="ps-num">5</span><span class="ps-text">Masters gets a live count of pre-registered visitors</span></div>
+    </div>
+  </div>
 
-    <!-- PHASE 1 -->
-    <div class="timeline-item">
-      <div class="timeline-dot"></div>
-      <div class="timeline-head">
-        <span class="timeline-phase">Phase 1</span>
-        <span class="timeline-month">🔥 IGNITE — June 21 – July 20 (Week 1–4)</span>
+  <div class="g2">
+    <div class="card">
+      <div class="card-h">🛠 How to Build This</div>
+      <div class="card-p" style="margin-bottom:10px;">Simple landing page (1 screen) with Add to Calendar button using <strong>AddEvent.com</strong> or <strong>Calendly</strong> integration. Form data (name + phone) captured in Google Sheets or Airtable. WhatsApp reminders via <strong>Interakt</strong> or <strong>AiSensy</strong> (both WABA-compliant, work in India). Build time: 2–3 days. Cost: near-zero (most tools have free tiers sufficient for this scale).</div>
+      <div style="display:flex;flex-wrap:wrap;gap:5px;">
+        <span class="chip chip-b">AddEvent.com</span>
+        <span class="chip chip-t">AiSensy / Interakt</span>
+        <span class="chip chip-g">Google Sheets</span>
+        <span class="chip chip-o">Airtable</span>
       </div>
-      <div class="timeline-card">
-        <div class="timeline-card-title">Foundation, Brand Setup & Sponsorship Outreach</div>
-        <div class="task-grid">
-          <div class="task-item"><span class="task-tag tag-ops">OPS</span>Onboard all platforms, get admin access to all social pages</div>
-          <div class="task-item"><span class="task-tag tag-design">DESIGN</span>Create full brand kit: event logo variants, social templates (FB/IG/LI)</div>
-          <div class="task-item"><span class="task-tag tag-design">DESIGN</span>Design title sponsor, co-sponsor, vendor stall brochures (print-ready)</div>
-          <div class="task-item"><span class="task-tag tag-dm">DM</span>Set up Meta Business Suite: pixel, audiences, ad accounts</div>
-          <div class="task-item"><span class="task-tag tag-dm">DM</span>Set up LinkedIn Campaign Manager for B2B lead ads</div>
-          <div class="task-item"><span class="task-tag tag-dm">DM</span>Google Search + Display campaigns for brand awareness</div>
-          <div class="task-item"><span class="task-tag tag-client">CLIENT</span>Collect 10+ vendor testimonial quotes + photos from Year 3 expo</div>
-          <div class="task-item"><span class="task-tag tag-video">VIDEO</span>Shoot teaser/launch video (30 sec) at LuLu venue walkthrough</div>
-          <div class="task-item"><span class="task-tag tag-dm">DM</span>Launch WhatsApp broadcast to 700+ MNRE member network</div>
-          <div class="task-item"><span class="task-tag tag-client">CLIENT</span>Send sponsor cold outreach — Adani, Havells, SolarEdge, Waaree</div>
-          <div class="task-item"><span class="task-tag tag-ops">OPS</span>Website audit + quick-win fixes (speed, CTA, mobile)</div>
-          <div class="task-item"><span class="task-tag tag-dm">DM</span>SEO: publish 4 blogs targeting high-intent Kerala solar keywords</div>
-          <div class="task-item"><span class="task-tag tag-design">DESIGN</span>Launch "Save the Date" countdown creatives across all platforms</div>
-          <div class="task-item"><span class="task-tag tag-dm">DM</span>Begin college outreach for campus ambassador program (15 colleges)</div>
+    </div>
+    <div class="card">
+      <div class="card-h">📈 Why This Converts</div>
+      <div class="card-p">Industry data shows that event reminder sequences increase actual attendance by 25–40% vs unreminded registrants. For a free-entry expo with 15K–20K footfall target, converting even 2,000 pre-registrations to actual visits using this system is a significant uplift. It also gives Masters a pre-event attendance count they can share with sponsors as proof of demand — before the expo even opens.</div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ══ TIMELINE ══ -->
+<div class="section" id="timeline">
+<div class="wrap">
+  <div class="section-eye">04 — Campaign Timeline</div>
+  <div class="section-h">Jul 18 → Sep 29 · 73 Days · No Wasted Day</div>
+  <p class="section-sub">Compressed from 3 months to ~10 weeks. Every phase has a primary conversion goal. Awareness and conversion run in parallel from Day 1 — there's no time for a pure awareness month.</p>
+
+  <div class="tl-wrap">
+
+    <div class="tl-item">
+      <div class="tl-dot"></div>
+      <div class="tl-head">
+        <span class="tl-badge">Phase 1 · IGNITE</span>
+        <span class="tl-period">Jul 18 – Aug 3 (2.5 weeks)</span>
+      </div>
+      <div class="tl-card">
+        <div class="tl-card-h">Foundation + Brand Setup + Simultaneous Vendor Outreach</div>
+        <div class="task-wrap">
+          <div class="task"><span class="tag tag-it">IT</span>Meta pixel verify, GA4 conversion events, WhatsApp API setup</div>
+          <div class="task"><span class="tag tag-d">DESIGN</span>Brand kit, social templates, sponsor brochure (Masters confirms pricing)</div>
+          <div class="task"><span class="tag tag-it">IT</span>Pre-registration landing page built + calendar integration live</div>
+          <div class="task"><span class="tag tag-dm">DM</span>Update expokerala.com: dates, venue, CTAs, meta tags, mobile fix</div>
+          <div class="task"><span class="tag tag-cl">CLIENT</span>WhatsApp broadcast #1 to 700+ member network — stall booking open</div>
+          <div class="task"><span class="tag tag-dm">DM</span>Launch "Save the Date" content across FB, IG, LI simultaneously</div>
+          <div class="task"><span class="tag tag-cl">CLIENT</span>Sponsor outreach deck sent to 15+ priority brands (Adani, Havells etc.)</div>
+          <div class="task"><span class="tag tag-dm">DM</span>Facebook awareness campaign live — Trivandrum families geo-targeted</div>
+          <div class="task"><span class="tag tag-dm">DM</span>LinkedIn InMail campaign — solar brand directors, South India EPC heads</div>
+          <div class="task"><span class="tag tag-v">VIDEO</span>Shoot + publish teaser reel (30s) — venue walkthrough at LuLu</div>
+          <div class="task"><span class="tag tag-dm">DM</span>Google Search campaign live — "solar expo Kerala 2026" + brand keywords</div>
+          <div class="task"><span class="tag tag-d">DESIGN</span>Malayalam language posts for Facebook community group distribution</div>
         </div>
       </div>
     </div>
 
-    <!-- PHASE 2 -->
-    <div class="timeline-item phase2">
-      <div class="timeline-dot"></div>
-      <div class="timeline-head">
-        <span class="timeline-phase">Phase 2</span>
-        <span class="timeline-month">🚀 AMPLIFY — July 21 – August 20 (Week 5–8)</span>
+    <div class="tl-item p2">
+      <div class="tl-dot"></div>
+      <div class="tl-head">
+        <span class="tl-badge">Phase 2 · AMPLIFY</span>
+        <span class="tl-period">Aug 4 – Aug 31 (4 weeks)</span>
       </div>
-      <div class="timeline-card">
-        <div class="timeline-card-title">Vendor Registration Push + Awareness Scaling</div>
-        <div class="task-grid">
-          <div class="task-item"><span class="task-tag tag-video">VIDEO</span>Produce 8 short-form reels (30 sec each) — "Why Exhibit at Masters 2026"</div>
-          <div class="task-item"><span class="task-tag tag-video">VIDEO</span>Speaker announcement videos (1 per speaker confirmed, target 10)</div>
-          <div class="task-item"><span class="task-tag tag-dm">DM</span>Run vendor stall Meta lead gen ads (₹50K/month targeting B2B)</div>
-          <div class="task-item"><span class="task-tag tag-dm">DM</span>LinkedIn Sponsored InMail campaign to solar companies in South India</div>
-          <div class="task-item"><span class="task-tag tag-design">DESIGN</span>Exhibitor kit visual (standee, stall mockup, badge design)</div>
-          <div class="task-item"><span class="task-tag tag-client">CLIENT</span>Finalize title sponsor. Begin co-sponsor negotiations.</div>
-          <div class="task-item"><span class="task-tag tag-dm">DM</span>Launch "Solar Startup Challenge" contest on Instagram + LinkedIn</div>
-          <div class="task-item"><span class="task-tag tag-video">VIDEO</span>Shoot "Solar is the Career" GenZ mini-documentary (3 min)</div>
-          <div class="task-item"><span class="task-tag tag-dm">DM</span>Activate college ambassador content UGC program (15 campuses)</div>
-          <div class="task-item"><span class="task-tag tag-design">DESIGN</span>Create 12 social posts featuring vendor profile spotlights</div>
-          <div class="task-item"><span class="task-tag tag-dm">DM</span>Facebook Events campaign for public awareness (Trivandrum targeting)</div>
-          <div class="task-item"><span class="task-tag tag-ops">OPS</span>Press release to Manorama, Mathrubhumi, SolarQuarter, Mercom India</div>
-          <div class="task-item"><span class="task-tag tag-dm">DM</span>Google Display retargeting ads for website visitors</div>
-          <div class="task-item"><span class="task-tag tag-design">DESIGN</span>Outdoor creative assets (flex boards, newspaper ads) if applicable</div>
+      <div class="tl-card">
+        <div class="tl-card-h">Vendor + Sponsor Push · Consumer Awareness Scales · Pre-Registration Activates</div>
+        <div class="task-wrap">
+          <div class="task"><span class="tag tag-dm">DM</span>Meta Lead Ads — vendor stall campaign with floor plan + pricing visual</div>
+          <div class="task"><span class="tag tag-dm">DM</span>Pre-registration campaign — "Secure your visit, get a reminder" as CTA</div>
+          <div class="task"><span class="tag tag-v">VIDEO</span>Reel: "Your electricity bill vs solar — what Masters Expo shows you" (family angle)</div>
+          <div class="task"><span class="tag tag-v">VIDEO</span>Speaker announcement video series begins (1 per week, 4 total)</div>
+          <div class="task"><span class="tag tag-d">DESIGN</span>Vendor testimonial posts — Year 3 alumni stories (ROI they got)</div>
+          <div class="task"><span class="tag tag-cl">CLIENT</span>WhatsApp broadcast #2 — pre-registration link + vendor stall deadline</div>
+          <div class="task"><span class="tag tag-dm">DM</span>Facebook Events campaign — families, homeowners, Trivandrum district</div>
+          <div class="task"><span class="tag tag-dm">DM</span>Google Display retargeting — all website visitors from Phase 1</div>
+          <div class="task"><span class="tag tag-d">DESIGN</span>Sector-specific posts: solar for homes / solar for farms / solar for hotels</div>
+          <div class="task"><span class="tag tag-it">IT</span>SEO: publish 4 blog articles targeting Kerala solar family/buyer keywords</div>
+          <div class="task"><span class="tag tag-cl">CLIENT</span>PR blast — Manorama, Mathrubhumi, SolarQuarter (event launch)</div>
+          <div class="task"><span class="tag tag-dm">DM</span>3 Kerala micro-influencer posts — home/lifestyle/sustainability creators</div>
         </div>
       </div>
     </div>
 
-    <!-- PHASE 3 -->
-    <div class="timeline-item phase3">
-      <div class="timeline-dot"></div>
-      <div class="timeline-head">
-        <span class="timeline-phase">Phase 3</span>
-        <span class="timeline-month">💥 CONVERT — August 21 – September 14 (Week 9–12)</span>
+    <div class="tl-item p3">
+      <div class="tl-dot"></div>
+      <div class="tl-head">
+        <span class="tl-badge">Phase 3 · CONVERT</span>
+        <span class="tl-period">Sep 1 – Sep 20 (3 weeks)</span>
       </div>
-      <div class="timeline-card">
-        <div class="timeline-card-title">Public Registration Push + FOMO Campaigns</div>
-        <div class="task-grid">
-          <div class="task-item"><span class="task-tag tag-video">VIDEO</span>Behind-the-scenes setup video series (3 parts, LuLu venue)</div>
-          <div class="task-item"><span class="task-tag tag-dm">DM</span>Instagram/Facebook "10 Days to Go" countdown stories daily</div>
-          <div class="task-item"><span class="task-tag tag-dm">DM</span>Aggressive public walk-in registration Meta campaign (₹80K)</div>
-          <div class="task-item"><span class="task-tag tag-design">DESIGN</span>Speaker series graphic cards (10 speakers, daily drop)</div>
-          <div class="task-item"><span class="task-tag tag-dm">DM</span>YouTube pre-roll ads on solar/career/Kerala content channels</div>
-          <div class="task-item"><span class="task-tag tag-dm">DM</span>Email sequence: 3 emails to registered vendor list for stall upsells</div>
-          <div class="task-item"><span class="task-tag tag-client">CLIENT</span>Lock all sponsor branding for on-site placements</div>
-          <div class="task-item"><span class="task-tag tag-dm">DM</span>WhatsApp broadcast series: weekly event update to 700+ members</div>
-          <div class="task-item"><span class="task-tag tag-video">VIDEO</span>Influencer content: 5 Kerala creators post event visit/interview reels</div>
-          <div class="task-item"><span class="task-tag tag-design">DESIGN</span>Print: badges, banners, standees, stall signage delivery</div>
-          <div class="task-item"><span class="task-tag tag-dm">DM</span>Google Search: "Solar expo Trivandrum 2026" keyword campaign</div>
-          <div class="task-item"><span class="task-tag tag-ops">OPS</span>Media empanelment: journalists list, press passes issued</div>
+      <div class="tl-card">
+        <div class="tl-card-h">Maximum Spend · FOMO Activation · Final Stall + Registration Push</div>
+        <div class="task-wrap">
+          <div class="task"><span class="tag tag-dm">DM</span>Highest ad budget concentration — all platforms running simultaneously</div>
+          <div class="task"><span class="tag tag-dm">DM</span>"25 Days to Expo" countdown daily content — rotating creatives</div>
+          <div class="task"><span class="tag tag-v">VIDEO</span>Behind-the-scenes at LuLu venue — setup, scale, stall previews</div>
+          <div class="task"><span class="tag tag-dm">DM</span>"Stalls filling up" urgency posts — vendor close angle</div>
+          <div class="task"><span class="tag tag-cl">CLIENT</span>WhatsApp broadcast #3 — "10 days to close stall bookings"</div>
+          <div class="task"><span class="tag tag-dm">DM</span>Pre-registration reminder campaign — "Have you secured your visit?"</div>
+          <div class="task"><span class="tag tag-d">DESIGN</span>Speaker drop cards — daily social post per confirmed speaker</div>
+          <div class="task"><span class="tag tag-cl">CLIENT</span>Lock all sponsor branding — digital + on-site placements confirmed</div>
+          <div class="task"><span class="tag tag-dm">DM</span>YouTube pre-roll ads targeting solar/energy/home improvement content</div>
+          <div class="task"><span class="tag tag-cl">CLIENT</span>Media empanelment: journalist list finalised, press passes issued</div>
+          <div class="task"><span class="tag tag-d">DESIGN</span>Print: badges, standees, banners, stall signage — delivery to venue</div>
         </div>
       </div>
     </div>
 
-    <!-- PHASE 4 -->
-    <div class="timeline-item phase4">
-      <div class="timeline-dot"></div>
-      <div class="timeline-head">
-        <span class="timeline-phase">Phase 4</span>
-        <span class="timeline-month">🌟 DOMINATE — Sep 15–27 + Post-Expo (Week 13+)</span>
+    <div class="tl-item p3">
+      <div class="tl-dot"></div>
+      <div class="tl-head">
+        <span class="tl-badge">Phase 3B · LAST MILE</span>
+        <span class="tl-period">Sep 21 – Sep 24 (4 days)</span>
       </div>
-      <div class="timeline-card">
-        <div class="timeline-card-title">Last-Mile Push + Live Coverage + Aftermath</div>
-        <div class="task-grid">
-          <div class="task-item"><span class="task-tag tag-video">VIDEO</span>Live streaming Day 1–3 on YouTube + Facebook (key seminars)</div>
-          <div class="task-item"><span class="task-tag tag-dm">DM</span>Real-time Instagram Stories + LinkedIn updates from floor</div>
-          <div class="task-item"><span class="task-tag tag-video">VIDEO</span>Shoot 1 highlight reel per day (30–60 sec, same day publish)</div>
-          <div class="task-item"><span class="task-tag tag-dm">DM</span>Final 10-day push: "Last chance" ad campaigns on all platforms</div>
-          <div class="task-item"><span class="task-tag tag-ops">OPS</span>On-site team: photographer + video crew (3-day event coverage)</div>
-          <div class="task-item"><span class="task-tag tag-video">VIDEO</span>Post-expo: Full event recap video (3–5 min) within 48 hours</div>
-          <div class="task-item"><span class="task-tag tag-dm">DM</span>Post-expo PR blast: footfall numbers, highlights, media outreach</div>
-          <div class="task-item"><span class="task-tag tag-client">CLIENT</span>Send sponsor + vendor post-expo report (leads generated, reach)</div>
-          <div class="task-item"><span class="task-tag tag-dm">DM</span>Publish Year 4 recap blog for SEO (rank for future queries)</div>
-          <div class="task-item"><span class="task-tag tag-design">DESIGN</span>Thank You creatives for all platforms + winner announcements</div>
+      <div class="tl-card">
+        <div class="tl-card-h">Final 4-Day Sprint — Maximum Public Reach</div>
+        <div class="task-wrap">
+          <div class="task"><span class="tag tag-dm">DM</span>"3 days to go / 2 days / Tomorrow / Today" countdown reels</div>
+          <div class="task"><span class="tag tag-cl">CLIENT</span>WhatsApp broadcast #4 — "Event starts Friday, free entry, see you there"</div>
+          <div class="task"><span class="tag tag-dm">DM</span>Calendar reminder triggers sent to all pre-registered visitors automatically</div>
+          <div class="task"><span class="tag tag-dm">DM</span>Shift all remaining budget to highest-performing ad sets</div>
+          <div class="task"><span class="tag tag-v">VIDEO</span>Teaser reel "what's happening at Masters this weekend" — all platforms</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tl-item p4">
+      <div class="tl-dot"></div>
+      <div class="tl-head">
+        <span class="tl-badge">Phase 4 · LIVE</span>
+        <span class="tl-period">Sep 25–27 · 3 Event Days</span>
+      </div>
+      <div class="tl-card">
+        <div class="tl-card-h">Live Coverage · Real-Time Content · On-Site Execution</div>
+        <div class="task-wrap">
+          <div class="task"><span class="tag tag-v">VIDEO</span>Daily recap reel — shot and published same evening (each day)</div>
+          <div class="task"><span class="tag tag-dm">DM</span>Real-time Instagram + Facebook Stories from the floor</div>
+          <div class="task"><span class="tag tag-v">VIDEO</span>Facebook + YouTube Live — key seminar and speaker sessions</div>
+          <div class="task"><span class="tag tag-d">DESIGN</span>On-floor photography — stalls, crowds, speakers, seminar moments</div>
+          <div class="task"><span class="tag tag-dm">DM</span>LinkedIn live updates — notable speaker quotes, key announcements</div>
+          <div class="task"><span class="tag tag-cl">CLIENT</span>Collect video testimonials from vendors, sponsors, visitors on day 2–3</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tl-item p4">
+      <div class="tl-dot"></div>
+      <div class="tl-head">
+        <span class="tl-badge">Phase 4 · POST-EVENT</span>
+        <span class="tl-period">Sep 28–29 · 2 Days</span>
+      </div>
+      <div class="tl-card">
+        <div class="tl-card-h">Success Story Vault — For Now + For Masters Expo Year 5</div>
+        <div class="task-wrap">
+          <div class="task"><span class="tag tag-v">VIDEO</span>Full event highlight film (3–5 min) — delivered within 48 hours</div>
+          <div class="task"><span class="tag tag-d">DESIGN</span>"Thank you" + footfall achievement posts across all platforms</div>
+          <div class="task"><span class="tag tag-cl">CLIENT</span>PR blast #2 — footfall numbers, sponsor names, notable moments</div>
+          <div class="task"><span class="tag tag-v">VIDEO</span>Short vendor/visitor testimonial reels (3–5 clips, published in 48 hrs)</div>
+          <div class="task"><span class="tag tag-it">IT</span>SEO: publish event recap blog — ranks for "Masters Expo 2027" searches from today</div>
+          <div class="task"><span class="tag tag-cl">CLIENT</span>Sponsor + vendor post-event report: leads generated, reach, ROI data</div>
+          <div class="task"><span class="tag tag-d">DESIGN</span>Year 4 highlights carousel — saved for Year 5 campaign launch asset</div>
         </div>
       </div>
     </div>
 
   </div>
 </div>
+</div>
 
-<!-- ── SECTION: PLATFORMS ── -->
-<div class="section-block" id="platforms">
-  <div class="section-label">Platform Strategy</div>
-  <div class="section-title">50–30–20: Platform Allocation & Audience Mapping</div>
-  <p class="section-sub">Previous focus was too Instagram-heavy. We rebalance: Facebook reaches local mass audience + B2C; LinkedIn activates B2B sponsors and vendors; Instagram stays for GenZ + brand; Google captures purchase intent; YouTube builds long-term authority.</p>
+<!-- ══ PLATFORM MIX ══ -->
+<div class="section" id="platforms">
+<div class="wrap">
+  <div class="section-eye">05 — Platform Mix</div>
+  <div class="section-h">Right Channel. Right Audience. Right Message.</div>
+  <p class="section-sub">Rebalanced from the original proposal. Facebook now leads for consumer and community reach. LinkedIn activates the B2B layer. WhatsApp is the silent highest-converter.</p>
 
-  <div class="platform-grid">
-    <div class="platform-card p-facebook">
-      <div class="platform-header">
-        <div class="platform-name">📘 Facebook</div>
-        <div class="platform-share">30%</div>
-      </div>
-      <div class="platform-bar"><div class="platform-fill" style="width:30%"></div></div>
-      <div class="platform-audience"><strong>Audience:</strong> 35–60 age, homeowners, local businesses, community groups, Kerala solar consumers</div>
-      <div class="platform-tactics">
-        <span class="tactic-chip">Events campaign</span>
-        <span class="tactic-chip">Facebook Groups</span>
-        <span class="tactic-chip">Lead gen ads (vendor/sponsor)</span>
-        <span class="tactic-chip">Malayalam content</span>
-        <span class="tactic-chip">Community building</span>
-        <span class="tactic-chip">Lookalike audiences</span>
+  <div class="plat-grid">
+    <div class="plat-card">
+      <div class="plat-h"><span class="plat-name">📘 Facebook</span><span class="plat-pct" style="color:#1877F2">35%</span></div>
+      <div class="plat-bar"><div class="plat-fill" style="width:35%;background:linear-gradient(90deg,#1877F2,#0D5AB2)"></div></div>
+      <div class="plat-aud"><strong>Audience:</strong> Trivandrum + Kerala families (₹1,500+ bill), homeowners, local community groups, 35–60 age</div>
+      <div class="plat-chips">
+        <span class="plat-chip">Malayalam content</span><span class="plat-chip">Facebook Events</span><span class="plat-chip">Community groups</span><span class="plat-chip">Lead gen ads</span><span class="plat-chip">Geo-targeted</span>
       </div>
     </div>
-
-    <div class="platform-card p-instagram">
-      <div class="platform-header">
-        <div class="platform-name">📸 Instagram</div>
-        <div class="platform-share">25%</div>
-      </div>
-      <div class="platform-bar"><div class="platform-fill" style="width:25%"></div></div>
-      <div class="platform-audience"><strong>Audience:</strong> 18–35 GenZ + Millennials, college students, young professionals, startups, solar enthusiasts</div>
-      <div class="platform-tactics">
-        <span class="tactic-chip">Reels (30s storytelling)</span>
-        <span class="tactic-chip">Stories countdown</span>
-        <span class="tactic-chip">UGC reposts</span>
-        <span class="tactic-chip">Influencer collab</span>
-        <span class="tactic-chip">Campus ambassador content</span>
-        <span class="tactic-chip">Startup Challenge contest</span>
+    <div class="plat-card">
+      <div class="plat-h"><span class="plat-name">📸 Instagram</span><span class="plat-pct" style="color:#E1306C">20%</span></div>
+      <div class="plat-bar"><div class="plat-fill" style="width:20%;background:linear-gradient(90deg,#E1306C,#833AB4)"></div></div>
+      <div class="plat-aud"><strong>Audience:</strong> 20–40, sector professionals, young homeowners, solar-curious, seminar seekers</div>
+      <div class="plat-chips">
+        <span class="plat-chip">Reels (sector angle)</span><span class="plat-chip">Pre-reg push</span><span class="plat-chip">Speaker drops</span><span class="plat-chip">Stories countdown</span>
       </div>
     </div>
-
-    <div class="platform-card p-linkedin">
-      <div class="platform-header">
-        <div class="platform-name">💼 LinkedIn</div>
-        <div class="platform-share">20%</div>
-      </div>
-      <div class="platform-bar"><div class="platform-fill" style="width:20%"></div></div>
-      <div class="platform-audience"><strong>Audience:</strong> Procurement managers, solar company CEOs, EPC contractors, investors, sponsors (Adani, Havells, etc.)</div>
-      <div class="platform-tactics">
-        <span class="tactic-chip">Sponsored InMail</span>
-        <span class="tactic-chip">Event page + ads</span>
-        <span class="tactic-chip">Thought leadership posts</span>
-        <span class="tactic-chip">Speaker series</span>
-        <span class="tactic-chip">Company page growth</span>
-        <span class="tactic-chip">Job fair outreach</span>
+    <div class="plat-card">
+      <div class="plat-h"><span class="plat-name">💼 LinkedIn</span><span class="plat-pct" style="color:#0A66C2">20%</span></div>
+      <div class="plat-bar"><div class="plat-fill" style="width:20%;background:linear-gradient(90deg,#0A66C2,#064A8C)"></div></div>
+      <div class="plat-aud"><strong>Audience:</strong> Solar brand directors, EPC contractors, procurement managers, international + domestic sponsors</div>
+      <div class="plat-chips">
+        <span class="plat-chip">Sponsored InMail</span><span class="plat-chip">Event page ads</span><span class="plat-chip">Thought leadership</span><span class="plat-chip">Company page</span>
       </div>
     </div>
-
-    <div class="platform-card p-google">
-      <div class="platform-header">
-        <div class="platform-name">🔍 Google Ads</div>
-        <div class="platform-share">15%</div>
-      </div>
-      <div class="platform-bar"><div class="platform-fill" style="width:15%"></div></div>
-      <div class="platform-audience"><strong>Audience:</strong> Intent-based searchers: solar expo Kerala, renewable energy events Trivandrum, solar job fair 2026</div>
-      <div class="platform-tactics">
-        <span class="tactic-chip">Search: brand + competitor</span>
-        <span class="tactic-chip">Display: retargeting</span>
-        <span class="tactic-chip">YouTube pre-roll</span>
-        <span class="tactic-chip">SEO blog cluster</span>
-        <span class="tactic-chip">Google My Business</span>
+    <div class="plat-card">
+      <div class="plat-h"><span class="plat-name">🔍 Google Ads</span><span class="plat-pct" style="color:#4285F4">15%</span></div>
+      <div class="plat-bar"><div class="plat-fill" style="width:15%;background:linear-gradient(90deg,#4285F4,#EA4335)"></div></div>
+      <div class="plat-aud"><strong>Audience:</strong> Intent searchers — "solar expo Trivandrum", "solar installation Kerala", "best solar company Kerala 2026"</div>
+      <div class="plat-chips">
+        <span class="plat-chip">Brand search</span><span class="plat-chip">Competitor keywords</span><span class="plat-chip">Display retargeting</span>
       </div>
     </div>
-
-    <div class="platform-card p-youtube">
-      <div class="platform-header">
-        <div class="platform-name">▶️ YouTube</div>
-        <div class="platform-share">10%</div>
-      </div>
-      <div class="platform-bar"><div class="platform-fill" style="width:10%"></div></div>
-      <div class="platform-audience"><strong>Audience:</strong> Long-form content seekers, seminar attendees, Kerala professionals searching solar industry content</div>
-      <div class="platform-tactics">
-        <span class="tactic-chip">Speaker talks upload</span>
-        <span class="tactic-chip">Event recap videos</span>
-        <span class="tactic-chip">Live stream Day 1–3</span>
-        <span class="tactic-chip">Pre-roll ads</span>
-        <span class="tactic-chip">Channel SEO</span>
+    <div class="plat-card">
+      <div class="plat-h"><span class="plat-name">▶️ YouTube</span><span class="plat-pct" style="color:#FF0000">5%</span></div>
+      <div class="plat-bar"><div class="plat-fill" style="width:5%;background:linear-gradient(90deg,#FF0000,#CC0000)"></div></div>
+      <div class="plat-aud"><strong>Audience:</strong> Solar/home improvement/energy content viewers in Kerala; seminar and knowledge seekers</div>
+      <div class="plat-chips">
+        <span class="plat-chip">Pre-roll ads</span><span class="plat-chip">Speaker uploads</span><span class="plat-chip">Live stream</span>
       </div>
     </div>
-
-    <div class="platform-card" style="background: var(--white);">
-      <div class="platform-header">
-        <div class="platform-name">💬 WhatsApp Broadcast</div>
-        <div class="platform-share" style="color: var(--energy-green);">Direct</div>
-      </div>
-      <div class="platform-bar"><div class="platform-fill" style="width:100%; background: linear-gradient(90deg,#25D366,#128C7E);"></div></div>
-      <div class="platform-audience"><strong>Audience:</strong> 700+ MNRE member vendors, existing expo alumni, industry contacts — highest conversion channel, zero ad spend</div>
-      <div class="platform-tactics">
-        <span class="tactic-chip">Member updates weekly</span>
-        <span class="tactic-chip">Sponsor deal alerts</span>
-        <span class="tactic-chip">Stall booking reminders</span>
-        <span class="tactic-chip">Last-mile push</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- GenZ strategy callout -->
-  <div style="background: linear-gradient(135deg, var(--deep-navy), #162032); border-radius: var(--radius); padding: 28px; margin-top: 24px; color: white;">
-    <div style="font-size: 12px; letter-spacing: 2px; text-transform: uppercase; color: var(--solar-gold); margin-bottom: 10px;">🎯 GenZ Activation Strategy</div>
-    <div style="font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 700; margin-bottom: 12px;">Solar Is The Next Big Career Move.</div>
-    <p style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 20px; max-width: 700px;">Position the expo as "where your solar career begins." Tap into Kerala youth anxieties about jobs, entrepreneurship, and the future. Make it feel like a festival, not a trade fair.</p>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px;">
-      <div style="background: rgba(255,255,255,0.07); border-radius: 8px; padding: 14px;">
-        <div style="font-weight: 600; font-size: 13px; margin-bottom: 6px; color: var(--solar-gold);">🏆 Solar Startup Challenge</div>
-        <div style="font-size: 12px; color: rgba(255,255,255,0.6);">Instagram + LinkedIn contest. Best solar startup pitch wins a free stall + mentorship. 50+ entries = massive UGC.</div>
-      </div>
-      <div style="background: rgba(255,255,255,0.07); border-radius: 8px; padding: 14px;">
-        <div style="font-weight: 600; font-size: 13px; margin-bottom: 6px; color: var(--solar-gold);">🎓 Campus Ambassador Program</div>
-        <div style="font-size: 12px; color: rgba(255,255,255,0.6);">15 colleges × 2 ambassadors = 30 active content creators. Certificate of participation drives sign-ups.</div>
-      </div>
-      <div style="background: rgba(255,255,255,0.07); border-radius: 8px; padding: 14px;">
-        <div style="font-weight: 600; font-size: 13px; margin-bottom: 6px; color: var(--solar-gold);">🎶 Evening Entertainment (7–9 PM)</div>
-        <div style="font-size: 12px; color: rgba(255,255,255,0.6);">Live music + artist collab makes the event shareable. Youth attend for entertainment, stay for solar career opportunities.</div>
-      </div>
-      <div style="background: rgba(255,255,255,0.07); border-radius: 8px; padding: 14px;">
-        <div style="font-weight: 600; font-size: 13px; margin-bottom: 6px; color: var(--solar-gold);">📲 Influencer Collab Layer</div>
-        <div style="font-size: 12px; color: rgba(255,255,255,0.6);">5 Kerala micro-influencers (50K–500K followers) in tech, career, sustainability niches. Barter + ₹20–50K per creator.</div>
+    <div class="plat-card" style="border:1px solid rgba(37,211,102,0.3);">
+      <div class="plat-h"><span class="plat-name">💬 WhatsApp Broadcast</span><span class="plat-pct" style="color:#25D366">₹0</span></div>
+      <div class="plat-bar"><div class="plat-fill" style="width:100%;background:linear-gradient(90deg,#25D366,#128C7E)"></div></div>
+      <div class="plat-aud"><strong>Audience:</strong> Masters' 700+ MNRE member network — highest trust, zero cost, fastest conversion for stall bookings</div>
+      <div class="plat-chips">
+        <span class="plat-chip">4 broadcast messages</span><span class="plat-chip">Stall booking reminders</span><span class="plat-chip">Pre-reg link share</span>
       </div>
     </div>
   </div>
 </div>
-
-<!-- ── SECTION: CONTENT MATRIX ── -->
-<div class="section-block" id="content">
-  <div class="section-label">Content Production Plan</div>
-  <div class="section-title">3-Month Content Engine: What We Produce & When</div>
-  <p class="section-sub">A factory approach — batch-produce monthly, publish daily. Every piece serves a specific audience and conversion objective. Malayalam + English bilingual content for maximum Kerala reach.</p>
-
-  <div class="content-grid">
-    <div class="content-card">
-      <div class="content-card-title">📸 Static Design (Posters/Graphics)</div>
-      <div class="content-row"><span class="c-label">Month 1 — Brand launch + Save Date</span><span class="c-count">20</span></div>
-      <div class="content-row"><span class="c-label">Month 2 — Vendor/Speaker spotlights</span><span class="c-count">28</span></div>
-      <div class="content-row"><span class="c-label">Month 3 — FOMO countdown series</span><span class="c-count">30</span></div>
-      <div class="content-row"><span class="c-label">Event day live posts</span><span class="c-count">12</span></div>
-      <div class="content-row" style="font-weight:700;"><span class="c-label">TOTAL STATIC CREATIVES</span><span class="c-count" style="background:var(--solar-gold);color:white;">90</span></div>
-    </div>
-
-    <div class="content-card">
-      <div class="content-card-title">🎬 Video Content (Reels / YT)</div>
-      <div class="content-row"><span class="c-label">Teaser/launch reels (30s)</span><span class="c-count">4</span></div>
-      <div class="content-row"><span class="c-label">Speaker announcement videos</span><span class="c-count">10</span></div>
-      <div class="content-row"><span class="c-label">GenZ "Solar Career" mini-docs</span><span class="c-count">3</span></div>
-      <div class="content-row"><span class="c-label">Vendor testimonial reels</span><span class="c-count">8</span></div>
-      <div class="content-row"><span class="c-label">BTS + countdown reels</span><span class="c-count">6</span></div>
-      <div class="content-row"><span class="c-label">Influencer collab videos</span><span class="c-count">5</span></div>
-      <div class="content-row"><span class="c-label">Live stream sessions (event day)</span><span class="c-count">6</span></div>
-      <div class="content-row"><span class="c-label">Daily event recap videos</span><span class="c-count">3</span></div>
-      <div class="content-row"><span class="c-label">Post-expo highlight film</span><span class="c-count">1</span></div>
-      <div class="content-row" style="font-weight:700;"><span class="c-label">TOTAL VIDEO PIECES</span><span class="c-count" style="background:var(--danger);color:white;">46</span></div>
-    </div>
-
-    <div class="content-card">
-      <div class="content-card-title">✍️ Written / SEO Content</div>
-      <div class="content-row"><span class="c-label">SEO blog articles (keyword-targeted)</span><span class="c-count">8</span></div>
-      <div class="content-row"><span class="c-label">Press releases (regional + national)</span><span class="c-count">4</span></div>
-      <div class="content-row"><span class="c-label">LinkedIn articles (thought leadership)</span><span class="c-count">6</span></div>
-      <div class="content-row"><span class="c-label">Email sequences (vendor/sponsor)</span><span class="c-count">9</span></div>
-      <div class="content-row"><span class="c-label">WhatsApp broadcasts</span><span class="c-count">12</span></div>
-      <div class="content-row" style="font-weight:700;"><span class="c-label">TOTAL WRITTEN PIECES</span><span class="c-count" style="background:var(--energy-green);color:white;">39</span></div>
-    </div>
-
-    <div class="content-card">
-      <div class="content-card-title">🎨 Design Assets (Non-social)</div>
-      <div class="content-row"><span class="c-label">Sponsorship brochure (digital PDF)</span><span class="c-count">1</span></div>
-      <div class="content-row"><span class="c-label">Vendor stall kit (visual + PDF)</span><span class="c-count">1</span></div>
-      <div class="content-row"><span class="c-label">Event map / floor plan design</span><span class="c-count">1</span></div>
-      <div class="content-row"><span class="c-label">Email newsletter template</span><span class="c-count">1</span></div>
-      <div class="content-row"><span class="c-label">Print: banners + standees</span><span class="c-count">8</span></div>
-      <div class="content-row"><span class="c-label">Badge + ID card design</span><span class="c-count">3</span></div>
-      <div class="content-row"><span class="c-label">Ad creatives (Meta/Google)</span><span class="c-count">24</span></div>
-      <div class="content-row" style="font-weight:700;"><span class="c-label">TOTAL DESIGN ASSETS</span><span class="c-count" style="background:var(--sky-blue);color:white;">39</span></div>
-    </div>
-  </div>
-
-  <!-- SEO Keywords -->
-  <div style="background: var(--white); border-radius: var(--radius); padding: 24px; margin-top: 20px; box-shadow: var(--shadow);">
-    <div class="timeline-card-title" style="margin-bottom: 16px;">🔍 Target SEO Keywords (High Intent)</div>
-    <div style="display: flex; flex-wrap: wrap; gap: 8px;">
-      <span style="background: rgba(245,166,35,0.1); color: #B8740A; padding: 5px 14px; border-radius: 20px; font-size: 12px; font-weight: 600;">solar expo Kerala 2026</span>
-      <span style="background: rgba(245,166,35,0.1); color: #B8740A; padding: 5px 14px; border-radius: 20px; font-size: 12px; font-weight: 600;">renewable energy expo Trivandrum</span>
-      <span style="background: rgba(245,166,35,0.1); color: #B8740A; padding: 5px 14px; border-radius: 20px; font-size: 12px; font-weight: 600;">solar exhibition Kerala September 2026</span>
-      <span style="background: rgba(46,125,50,0.1); color: var(--energy-green); padding: 5px 14px; border-radius: 20px; font-size: 12px; font-weight: 600;">solar stall booking Kerala</span>
-      <span style="background: rgba(46,125,50,0.1); color: var(--energy-green); padding: 5px 14px; border-radius: 20px; font-size: 12px; font-weight: 600;">Kerala RE Expo 2026</span>
-      <span style="background: rgba(46,125,50,0.1); color: var(--energy-green); padding: 5px 14px; border-radius: 20px; font-size: 12px; font-weight: 600;">MNRE expo Kerala</span>
-      <span style="background: rgba(21,101,192,0.1); color: var(--sky-blue); padding: 5px 14px; border-radius: 20px; font-size: 12px; font-weight: 600;">solar job fair Kerala</span>
-      <span style="background: rgba(21,101,192,0.1); color: var(--sky-blue); padding: 5px 14px; border-radius: 20px; font-size: 12px; font-weight: 600;">renewable energy jobs Kerala 2026</span>
-      <span style="background: rgba(21,101,192,0.1); color: var(--sky-blue); padding: 5px 14px; border-radius: 20px; font-size: 12px; font-weight: 600;">solar startup Kerala expo</span>
-      <span style="background: rgba(0,137,123,0.1); color: var(--accent-teal); padding: 5px 14px; border-radius: 20px; font-size: 12px; font-weight: 600;">Masters expo 2026</span>
-      <span style="background: rgba(0,137,123,0.1); color: var(--accent-teal); padding: 5px 14px; border-radius: 20px; font-size: 12px; font-weight: 600;">Kerala solar industry event</span>
-      <span style="background: rgba(0,137,123,0.1); color: var(--accent-teal); padding: 5px 14px; border-radius: 20px; font-size: 12px; font-weight: 600;">LuLu Mall expo Trivandrum</span>
-    </div>
-  </div>
 </div>
 
-<!-- SECTION: BUDGET -->
-<div class="section-block" id="budget">
-  <div class="section-label">Financial Plan</div>
-  <div class="section-title">Full Budget Breakdown — 3 Months</div>
-   <p class="section-sub">Structured for transparency and ROI accountability. All amounts in INR, excluding GST. Agency fee, content production, and ad spend are presented together as a complete investment view — client can choose scope based on their budget.</p> 
+<!-- ══ PACKAGES COMPARISON ══ -->
+<div class="section" id="packages">
+<div class="wrap">
+  <div class="section-eye">06 — Package Options</div>
+  <div class="section-h">Two Options. One Decision.</div>
+  <p class="section-sub">Built for Masters' internal committee. Choose the package that matches the investment appetite. Both include the pre-registration system and core strategy — the difference is depth, ad spend, and content volume.</p>
 
-  <div class="alert" style="margin-bottom: 20px;">
-    <span>📌</span>
-    <span><strong>Our Recommendation:</strong> Based on comparable Kerala expo campaigns and regional digital marketing benchmarks, we suggest a <strong>total investment of ₹7–9L</strong> for a 3-month full-scale campaign. This includes agency fees, content production, and ad spend — structured as a single integrated package. If budget is a constraint, a focused ₹4–5L plan covering essentials is also outlined below.</span>
-  </div> 
- <div class="kpi-row" style="margin-bottom: 24px;">
-    <div class="kpi-card">
-      <div class="kpi-lbl">Agency Fee (3 months)</div>
-      <div class="kpi-val">₹3L</div>
-      <div class="kpi-note">₹1L/month — incl. strategy, DM, design, reporting</div>
-    </div>
-    <div class="kpi-card green">
-      <div class="kpi-lbl">Recommended Ad Spend</div>
-      <div class="kpi-val">₹3.5L</div>
-      <div class="kpi-note">Meta + Google + LinkedIn over 3 months</div>
-    </div>
-    <div class="kpi-card blue">
-      <div class="kpi-lbl">Content Production</div>
-      <div class="kpi-val">₹1.5L</div>
-      <div class="kpi-note">Video shoots, editing, photography</div>
-    </div>
-    <div class="kpi-card teal">
-      <div class="kpi-lbl">PR + Influencer</div>
-      <div class="kpi-val">₹50K</div>
-      <div class="kpi-note">3 micro-influencers + press outreach</div>
-    </div>
-    <div class="kpi-card navy">
-      <div class="kpi-lbl">Total (Recommended)</div>
-      <div class="kpi-val">₹8.5L</div>
-      <div class="kpi-note">Full 3-month campaign</div>
-    </div>
-    <!-- <div class="kpi-card" style="border-left-color: var(--text-light);">
-      <div class="kpi-lbl">Lean Option</div>
-      <div class="kpi-val">₹4.5L</div>
-      <div class="kpi-note">Focused essentials — DM + Ads only</div>
-    </div> -->
-  </div> 
+  <div class="comp-wrap">
 
- <div class="budget-table-wrap" style="margin-bottom: 12px;">
-    <table class="btable">
+    <!-- PACKAGE A — FULL ₹6.9L -->
+    <div class="pkg">
+      <div class="pkg-head gold">
+        <div class="pkg-eye">Package A · Recommended</div>
+        <div class="pkg-name">Full Campaign</div>
+        <div class="pkg-price" style="color:var(--navy);">₹6,90,000</div>
+        <div class="pkg-price-note" style="color:rgba(13,27,42,0.55);">+ 18% GST · Jul 18–Sep 29 · All services included</div>
+      </div>
+      <div class="pkg-body">
+        <div class="pkg-breakdown">
+          <div class="pkg-row"><span class="pkg-row-lbl">Agency Fee — strategy, execution, reporting</span><span class="pkg-row-val">₹2,40,000</span></div>
+          <div class="pkg-row"><span class="pkg-row-lbl">Meta Ads — FB + IG (awareness → leads → FOMO)</span><span class="pkg-row-val">₹1,80,000</span></div>
+          <div class="pkg-row"><span class="pkg-row-lbl">Google Ads — Search + Display + YouTube pre-roll</span><span class="pkg-row-val">₹60,000</span></div>
+          <div class="pkg-row"><span class="pkg-row-lbl">LinkedIn Ads — InMail + Event Ads (B2B)</span><span class="pkg-row-val">₹45,000</span></div>
+          <div class="pkg-row"><span class="pkg-row-lbl">Video Production — 14 pieces + 3-day event coverage</span><span class="pkg-row-val">₹1,10,000</span></div>
+          <div class="pkg-row"><span class="pkg-row-lbl">Design — 75 creatives + sponsor kit + print assets</span><span class="pkg-row-val">₹40,000</span></div>
+          <div class="pkg-row"><span class="pkg-row-lbl">PR + 3 Influencer activations (barter-first)</span><span class="pkg-row-val">₹15,000</span></div>
+          <div class="pkg-row"><span class="pkg-row-lbl">SEO (6 blogs) + Website fixes + Tools</span><span class="pkg-row-val">₹20,000</span></div>
+          <div class="pkg-row"><span class="pkg-row-lbl">Pre-registration system + WhatsApp API</span><span class="pkg-row-val">Included</span></div>
+          <div class="pkg-row" style="font-weight:700;"><span class="pkg-row-lbl" style="color:var(--text);">Total</span><span class="pkg-row-val" style="color:var(--green);font-size:15px;">₹6,90,000</span></div>
+        </div>
+        <div class="pkg-del-h">All Services Included</div>
+        <div class="pkg-del-list">
+          <div class="pkg-del-item"><span class="tick">✓</span> Campaign strategy + 73-day content calendar</div>
+          <div class="pkg-del-item"><span class="tick">✓</span> Social management — FB, IG, LinkedIn, YouTube (75 posts)</div>
+          <div class="pkg-del-item"><span class="tick">✓</span> 75 static design creatives (bilingual, all platforms)</div>
+          <div class="pkg-del-item"><span class="tick">✓</span> 14 video pieces — reels, speaker clips, BTS, event film</div>
+          <div class="pkg-del-item"><span class="tick">✓</span> Meta Lead Ads — vendor stall + public walk-in</div>
+          <div class="pkg-del-item"><span class="tick">✓</span> LinkedIn InMail — 200+ solar brand directors targeted</div>
+          <div class="pkg-del-item"><span class="tick">✓</span> Google Search + Display + YouTube pre-roll</div>
+          <div class="pkg-del-item"><span class="tick">✓</span> Pre-registration page + Google/Apple calendar integration</div>
+          <div class="pkg-del-item"><span class="tick">✓</span> WhatsApp broadcast × 4 to 700+ MNRE member network</div>
+          <div class="pkg-del-item"><span class="tick">✓</span> Sponsor outreach kit + brochure design (print + digital)</div>
+          <div class="pkg-del-item"><span class="tick">✓</span> 3 Kerala micro-influencer activations (barter-first)</div>
+          <div class="pkg-del-item"><span class="tick">✓</span> 6 SEO blog articles + full website fixes</div>
+          <div class="pkg-del-item"><span class="tick">✓</span> 2 press releases — regional + trade media</div>
+          <div class="pkg-del-item"><span class="tick">✓</span> On-site photography + same-day reels (3 event days)</div>
+          <div class="pkg-del-item"><span class="tick">✓</span> Facebook + YouTube Live streaming (key sessions)</div>
+          <div class="pkg-del-item"><span class="tick">✓</span> Post-event highlight film (48-hr delivery)</div>
+          <div class="pkg-del-item"><span class="tick">✓</span> Success story vault — Year 5 asset library</div>
+          <div class="pkg-del-item"><span class="tick">✓</span> 6 bi-weekly reports + final campaign ROI report</div>
+        </div>
+        <div class="pkg-kpi-h">Realistic Targets — Package A</div>
+        <div class="kpi-pill-wrap">
+          <div class="kpi-pill">Walk-in footfall: <strong>15K–20K</strong></div>
+          <div class="kpi-pill">Pre-registrations: <strong>1,500–2,500</strong></div>
+          <div class="kpi-pill">Vendor stall leads: <strong>80–120</strong></div>
+          <div class="kpi-pill">Paid impressions: <strong>2L+</strong></div>
+          <div class="kpi-pill">Sponsor conversations: <strong>4–6 confirmed</strong></div>
+          <div class="kpi-pill">Website sessions: <strong>8K–12K</strong></div>
+          <div class="kpi-pill">CPL target: <strong>&lt;₹280</strong></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PACKAGE B — LEAN ₹5.5L -->
+    <div class="pkg">
+      <div class="pkg-head">
+        <div class="pkg-eye">Package B · Budget-Conscious</div>
+        <div class="pkg-name">Core Campaign</div>
+        <div class="pkg-price">₹5,50,000</div>
+        <div class="pkg-price-note">+ 18% GST · Jul 18–Sep 29 · Focused scope</div>
+      </div>
+      <div class="pkg-body">
+        <div class="pkg-breakdown">
+          <div class="pkg-row"><span class="pkg-row-lbl">Agency Fee — strategy, execution, reporting</span><span class="pkg-row-val">₹2,25,000</span></div>
+          <div class="pkg-row"><span class="pkg-row-lbl">Meta Ads — FB + IG only</span><span class="pkg-row-val">₹1,20,000</span></div>
+          <div class="pkg-row"><span class="pkg-row-lbl">Google Search Ads — intent + brand keywords</span><span class="pkg-row-val">₹30,000</span></div>
+          <div class="pkg-row"><span class="pkg-row-lbl">Video Production — 8 reels (basic edit)</span><span class="pkg-row-val">₹55,000</span></div>
+          <div class="pkg-row"><span class="pkg-row-lbl">Design — 50 static creatives</span><span class="pkg-row-val">₹50,000</span></div>
+          <div class="pkg-row"><span class="pkg-row-lbl">SEO (3 blogs) + Website fixes + Tools</span><span class="pkg-row-val">₹15,000</span></div>
+          <div class="pkg-row"><span class="pkg-row-lbl">Pre-registration system + WhatsApp × 4</span><span class="pkg-row-val">Included</span></div>
+          <div class="pkg-row" style="font-weight:700;"><span class="pkg-row-lbl" style="color:var(--text);">Total</span><span class="pkg-row-val" style="color:var(--green);font-size:15px;">₹4,95,000 <small style="font-size:11px;font-weight:400;color:var(--lt);">≈ ₹5.5L incl. contingency</small></span></div>
+        </div>
+        <div class="pkg-del-h">What's Included</div>
+        <div class="pkg-del-list">
+          <div class="pkg-del-item"><span class="tick">✓</span> Campaign strategy + content calendar</div>
+          <div class="pkg-del-item"><span class="tick">✓</span> Social management — FB + IG (~50 posts)</div>
+          <div class="pkg-del-item"><span class="tick">✓</span> 50 static design creatives</div>
+          <div class="pkg-del-item"><span class="tick">✓</span> 8 video reels (basic edit — no speaker films)</div>
+          <div class="pkg-del-item"><span class="tick">✓</span> Meta Lead Ads (FB + IG) — vendor + public walk-in</div>
+          <div class="pkg-del-item"><span class="tick">✓</span> Google Search ads — brand + intent keywords</div>
+          <div class="pkg-del-item"><span class="tick">✓</span> Pre-registration page + calendar integration</div>
+          <div class="pkg-del-item"><span class="tick">✓</span> WhatsApp broadcast × 4 (700+ member list)</div>
+          <div class="pkg-del-item"><span class="tick">✓</span> Website quick-wins — dates, CTAs, meta tags, pixel</div>
+          <div class="pkg-del-item"><span class="tick">✓</span> 3 SEO blog articles</div>
+          <div class="pkg-del-item"><span class="tick">✓</span> 1 press release + media distribution</div>
+          <div class="pkg-del-item"><span class="tick">✓</span> 3 bi-weekly reports + final summary</div>
+          <div class="pkg-del-item"><span class="cross">✗</span> <span style="color:var(--lt);">LinkedIn Ads — organic LinkedIn posts only</span></div>
+          <div class="pkg-del-item"><span class="cross">✗</span> <span style="color:var(--lt);">On-site event photography crew</span></div>
+          <div class="pkg-del-item"><span class="cross">✗</span> <span style="color:var(--lt);">Influencer activations</span></div>
+          <div class="pkg-del-item"><span class="cross">✗</span> <span style="color:var(--lt);">Sponsor brochure design</span></div>
+          <div class="pkg-del-item"><span class="cross">✗</span> <span style="color:var(--lt);">Post-event highlight film</span></div>
+          <div class="pkg-del-item"><span class="cross">✗</span> <span style="color:var(--lt);">Success story vault / Year 5 assets</span></div>
+        </div>
+        <div class="pkg-kpi-h">Realistic Targets — Package B</div>
+        <div class="kpi-pill-wrap">
+          <div class="kpi-pill">Walk-in footfall: <strong>8K–13K</strong></div>
+          <div class="kpi-pill">Pre-registrations: <strong>600–1,000</strong></div>
+          <div class="kpi-pill">Vendor stall leads: <strong>40–65</strong></div>
+          <div class="kpi-pill">FB+IG reach: <strong>80K–1.2L impressions</strong></div>
+          <div class="kpi-pill">Website sessions: <strong>3K–5K</strong></div>
+          <div class="kpi-pill">CPL target: <strong>&lt;₹320</strong></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Comparison table -->
+  <div style="background:var(--white);border-radius:var(--r);overflow:hidden;box-shadow:var(--sh);">
+    <table class="comp-table">
       <thead>
         <tr>
-          <th>Line Item</th>
-          <th>What's Included</th>
-          <th>Month 1</th>
-          <th>Month 2</th>
-          <th>Month 3</th>
-          <th>Total</th>
+          <th>Feature / Deliverable</th>
+          <th>Package B — Core · ₹5.5L</th>
+          <th>Package A — Full · ₹6.9L ★</th>
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td><strong>Agency Fee</strong><br><small style="color:var(--text-light)">Strategy, DM execution, account management, reporting</small></td>
-          <td style="font-size:12px; color:var(--text-mid);">Social media management, calendar, campaign setup, bi-weekly reports</td>
-          <td><span class="badge-month bm1">M1</span> <span class="amount">₹1,00,000</span></td>
-          <td><span class="badge-month bm2">M2</span> <span class="amount">₹1,00,000</span></td>
-          <td><span class="badge-month bm3">M3</span> <span class="amount">₹1,00,000</span></td>
-          <td><span class="amount total">₹3,00,000</span></td>
-        </tr>
-        <tr>
-          <td><strong>Meta Ads (FB + IG)</strong><br><small style="color:var(--text-light)">Awareness → vendor leads → public walk-in push</small></td>
-          <td style="font-size:12px; color:var(--text-mid);">Ad creatives included. Spend goes directly to Meta platform.</td>
-          <td><span class="amount">₹30,000</span></td>
-          <td><span class="amount">₹60,000</span></td>
-          <td><span class="amount">₹90,000</span></td>
-          <td><span class="amount total">₹1,80,000</span></td>
-        </tr>
-        <tr>
-          <td><strong>Google Ads</strong><br><small style="color:var(--text-light)">Search (intent) + Display (retargeting)</small></td>
-          <td style="font-size:12px; color:var(--text-mid);">Brand search, competitor keyword targeting, event landing page traffic</td>
-          <td><span class="amount">₹15,000</span></td>
-          <td><span class="amount">₹25,000</span></td>
-          <td><span class="amount">₹30,000</span></td>
-          <td><span class="amount total">₹70,000</span></td>
-        </tr>
-        <tr>
-          <td><strong>LinkedIn Ads</strong><br><small style="color:var(--text-light)">B2B — sponsor + vendor decision-makers</small></td>
-          <td style="font-size:12px; color:var(--text-mid);">Sponsored InMail to solar company directors + EPC procurement heads in Kerala/South India</td>
-          <td><span class="amount">₹20,000</span></td>
-          <td><span class="amount">₹30,000</span></td>
-          <td><span class="amount">₹20,000</span></td>
-          <td><span class="amount total">₹70,000</span></td>
-        </tr>
-        <tr>
-          <td><strong>Content Production</strong><br><small style="color:var(--text-light)">Video shoot + edit + photography</small></td>
-          <td style="font-size:12px; color:var(--text-mid);">Month 1: teaser + 2 reels. Month 2: speaker videos + vendor reels. Month 3: BTS + event day coverage</td>
-          <td><span class="amount">₹25,000</span></td>
-          <td><span class="amount">₹50,000</span></td>
-          <td><span class="amount">₹75,000</span></td>
-          <td><span class="amount total">₹1,50,000</span></td>
-        </tr>
-        <tr>
-          <td><strong>Design Production</strong><br><small style="color:var(--text-light)">Social creatives, brochures, ad banners</small></td>
-          <td style="font-size:12px; color:var(--text-mid);">90 social posts + sponsor kit + vendor brochure + print assets (badges, standees)</td>
-          <td><span class="amount">₹20,000</span></td>
-          <td><span class="amount">₹15,000</span></td>
-          <td><span class="amount">₹15,000</span></td>
-          <td><span class="amount total">₹50,000</span></td>
-        </tr>
-        <tr>
-          <td><strong>Influencer + PR</strong><br><small style="color:var(--text-light)">3 Kerala micro-influencers + press releases</small></td>
-          <td style="font-size:12px; color:var(--text-mid);">Barter-first approach. Max paid: ₹10–15K per creator. Press releases to Manorama, Mathrubhumi, SolarQuarter.</td>
-          <td><span class="amount">—</span></td>
-          <td><span class="amount">₹25,000</span></td>
-          <td><span class="amount">₹25,000</span></td>
-          <td><span class="amount total">₹50,000</span></td>
-        </tr>
-        <tr>
-          <td><strong>SEO + Website Fixes</strong><br><small style="color:var(--text-light)">Technical audit, meta tags, blog setup</small></td>
-          <td style="font-size:12px; color:var(--text-mid);">Month 1 fix sprint. 8 SEO blogs across campaign. Google Analytics + pixel verification.</td>
-          <td><span class="amount">₹20,000</span></td>
-          <td><span class="amount">₹5,000</span></td>
-          <td><span class="amount">₹5,000</span></td>
-          <td><span class="amount total">₹30,000</span></td>
-        </tr>
-        <tr>
-          <td><strong>Tools + Miscellaneous</strong><br><small style="color:var(--text-light)">Scheduling tools, stock assets, WhatsApp API</small></td>
-          <td style="font-size:12px; color:var(--text-mid);">Buffer/Meta Suite Pro, Canva Pro, minor contingency</td>
-          <td><span class="amount">₹5,000</span></td>
-          <td><span class="amount">₹5,000</span></td>
-          <td><span class="amount">₹5,000</span></td>
-          <td><span class="amount total">₹15,000</span></td>
-        </tr>
-      </tbody>
-      <tfoot>
-        <tr>
-          <td colspan="2"><strong>MONTHLY TOTAL (Recommended Plan)</strong></td>
-          <td><strong>₹2,35,000</strong></td>
-          <td><strong>₹3,15,000</strong></td>
-          <td><strong>₹3,65,000</strong></td>
-          <td><strong class="amount total" style="font-size:16px;">₹8,15,000</strong></td>
-        </tr>
-      </tfoot>
-    </table>
-  </div> 
-
-   <!-- <div style="background: var(--white); border-radius: var(--radius); padding: 20px; box-shadow: var(--shadow); margin-bottom: 24px; border-left: 4px solid var(--text-light);">
-    <div style="font-weight: 700; font-size: 14px; margin-bottom: 10px; color: var(--text-mid);">💡 Lean Option — ₹4.5L (If budget is limited)</div>
-    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px; font-size: 13px; color: var(--text-mid);">
-      <div>✅ Agency fee: ₹75K/month (₹2.25L)</div>
-      <div>✅ Meta Ads only: ₹1.2L total</div>
-      <div>✅ Design (static only): ₹50K</div>
-      <div>✅ Basic video (reels only): ₹55K</div>
-      <div>⛔ No LinkedIn Ads</div>
-      <div>⛔ No influencer outreach</div>
-      <div>⛔ Reduced content volume (~50 posts)</div>
-    </div>
-  </div>  -->
-
-   <div class="alert">
-    <span>💡</span>
-    <span><strong>Budget Note:</strong> All amounts exclude 18% GST. Ad spends are direct platform costs — billed at actuals. Agency fee covers full execution: content calendar, ad management, community management, and reporting. Suggested payment terms: 50% advance on signing, 25% at Month 2 start, 25% on event completion. The Lean Option is available if the full plan needs phased commitment.</span>
-  </div> 
-
-  <!-- Sponsorship Packages - CONCEPT FRAMEWORK -->
-  <div style="background: var(--white); border-radius: var(--radius); padding: 24px; margin-top: 24px; box-shadow: var(--shadow);">
-    <div style="font-size: 11px; letter-spacing: 2px; text-transform: uppercase; color: var(--solar-gold); font-weight: 700; margin-bottom: 6px;">For Masters to Develop Internally</div>
-    <div style="font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700; margin-bottom: 8px;">Sponsorship Package Framework</div>
-    <p style="font-size: 13px; color: var(--text-mid); margin-bottom: 20px; max-width: 700px;">The following is a <strong>recommended structure</strong> for Masters to build their sponsorship brochure — pricing should be finalized by Masters based on previous year actuals, venue costs, and value delivered. FlumenX can assist in designing the sponsor brochure once tiers and pricing are confirmed by Mr. Noufal.</p>
-
-    <div class="pkg-grid">
-      <div class="pkg-card title">
-        <div class="pkg-label">Highest Visibility</div>
-        <div class="pkg-name"> MAIN SPONSOR</div>
-        <div style="font-size: 13px; margin-bottom: 14px; opacity: 0.85;">Pricing to be set by Masters</div>
-        <div class="pkg-feature">✅ "Powered by [Brand]" event naming</div>
-        <div class="pkg-feature">✅ Premium stall — largest floor area</div>
-        <div class="pkg-feature">✅ Stage + backdrop + all digital branding</div>
-        <div class="pkg-feature">✅ Featured speaker slot</div>
-        <div class="pkg-feature">✅ Logo on all campaign creatives</div>
-        <div class="pkg-feature">✅ Press release mention</div>
-      </div>
-      <div class="pkg-card co">
-        <div class="pkg-label">Strong Visibility</div>
-        <div class="pkg-name">Co-Sponsor</div>
-        <div style="font-size: 13px; margin-bottom: 14px; opacity: 0.85;">Pricing to be set by Masters</div>
-        <div class="pkg-feature">✅ "In association with" branding</div>
-        <div class="pkg-feature">✅ Mid-size branded stall</div>
-        <div class="pkg-feature">✅ Stage backdrop logo</div>
-        <div class="pkg-feature">✅ Digital + print branding</div>
-        <div class="pkg-feature">✅ Speaker slot (panel)</div>
-      </div>
-      <div class="pkg-card associate">
-        <div class="pkg-label">Good Presence</div>
-        <div class="pkg-name">PLATINUM</div>
-        <div style="font-size: 13px; margin-bottom: 14px; opacity: 0.85;">Pricing to be set by Masters</div>
-        <div class="pkg-feature">✅ Logo on select digital campaigns</div>
-        <div class="pkg-feature">✅ 3×3 stall in main hall</div>
-        <div class="pkg-feature">✅ Social mention series (6+ posts)</div>
-        <div class="pkg-feature">✅ Event catalogue listing</div>
-      </div>
-
-
-      <div class="pkg-card media">
-        <div class="pkg-label">Partnership</div>
-        <div class="pkg-name">GOLD</div>
-        <div style="font-size: 13px; margin-bottom: 14px; opacity: 0.85;">Pricing to be set by Masters</div>
-        <div class="pkg-feature">✅ Guaranteed coverage + reach</div>
-        <div class="pkg-feature">✅ Mutual social promotion</div>
-        <div class="pkg-feature">✅ Press + journalist accreditation</div>
-        <div class="pkg-feature">✅ On-site media booth</div>
-      </div>
-      <div class="pkg-card silver">
-        <div class="pkg-label">Extended Reach</div>
-        <div class="pkg-name">SILVER</div>
-        <div style="font-size: 13px; margin-bottom: 14px; opacity: 0.85;">Pricing to be set by Masters</div>
-        <div class="pkg-feature">✅ 30 stalls allocation</div>
-        <div class="pkg-feature">✅ 4 x 4 stall size</div>
-        <div class="pkg-feature">✅ Lobby logo visibility</div>
-        <div class="pkg-feature">✅ Registration counter branding</div>
-        <div class="pkg-feature">✅ 30-second LED wall video slots</div>
-        <div class="pkg-feature">✅ 15 days social promotion support</div>
-      </div>
-      <div class="pkg-card bronze">
-        <div class="pkg-label">Entry Tier</div>
-        <div class="pkg-name">BRONZE</div>
-        <div style="font-size: 13px; margin-bottom: 14px; opacity: 0.85;">Pricing to be set by Masters</div>
-        <div class="pkg-feature">✅ 74 stalls allocation</div>
-        <div class="pkg-feature">✅ 3 x 3 stall size</div>
-        <div class="pkg-feature">✅ Cost-effective brand presence</div>
-        <div class="pkg-feature">✅ Shared venue visibility</div>
-        <div class="pkg-feature">✅ Suitable for volume participation</div>
-      </div>
-      <div class="pkg-card ev">
-        <div class="pkg-label">Special Category</div>
-        <div class="pkg-name">EV STALLS</div>
-        <div style="font-size: 13px; margin-bottom: 14px; opacity: 0.85;">Pricing to be set by Masters</div>
-        <div class="pkg-feature">✅ 10 dedicated stalls</div>
-        <div class="pkg-feature">✅ 5 x 4 open space format</div>
-        <div class="pkg-feature">✅ Tailored for EV showcase brands</div>
-        <div class="pkg-feature">✅ High-visibility product display area</div>
-        <div class="pkg-feature">✅ Ideal for live demos and walkarounds</div>
-      </div>
-    </div>
-
-
-
-
-
-
-    <div class="alert" style="margin-top: 16px; margin-bottom: 0;">
-      <span>💬</span>
-      <span><strong>FlumenX Offer:</strong> Once Masters confirms package pricing and tier names, we will design a print-ready + digital sponsor brochure as part of the Month 1 deliverables. This becomes the primary document for all sponsor outreach calls.</span>
-    </div>
-  </div>
-</div>
-
-<!-- ── SECTION: TEAM ── -->
-<div class="section-block" id="team">
-  <div class="section-label">Team Structure</div>
-  <div class="section-title">Who Does What — Roles & Responsibilities</div>
-  <p class="section-sub">Lean but specialist team structure. Each role has a clear domain. No overlaps. Weekly sync every Monday; client review every 2 weeks.</p>
-
-  <div class="team-grid">
-    <div class="team-card">
-      <div class="team-avatar" style="background: rgba(245,166,35,0.1);">🎯</div>
-      <div class="team-role">Account Strategist</div>
-      <div class="team-name">Anoop / Senior Lead</div>
-      <div class="team-tasks">
-        <span class="team-task-chip">Client liaison</span>
-        <span class="team-task-chip">Campaign strategy</span>
-        <span class="team-task-chip">Sponsor deck</span>
-        <span class="team-task-chip">Month reports</span>
-      </div>
-    </div>
-    <div class="team-card">
-      <div class="team-avatar" style="background: rgba(21,101,192,0.1);">📱</div>
-      <div class="team-role">DM Lead</div>
-      <div class="team-name">Shibin</div>
-      <div class="team-tasks">
-        <span class="team-task-chip">Meta ads</span>
-        <span class="team-task-chip">LinkedIn campaigns</span>
-        <span class="team-task-chip">Google Ads</span>
-        <span class="team-task-chip">Analytics</span>
-        <span class="team-task-chip">Content calendar</span>
-      </div>
-    </div>
-    <div class="team-card">
-      <div class="team-avatar" style="background: rgba(245,166,35,0.1);">🎨</div>
-      <div class="team-role">Design Lead</div>
-      <div class="team-name">Design Team</div>
-      <div class="team-tasks">
-        <span class="team-task-chip">Social creatives</span>
-        <span class="team-task-chip">Print assets</span>
-        <span class="team-task-chip">Brochures</span>
-        <span class="team-task-chip">Ad banners</span>
-      </div>
-    </div>
-    <div class="team-card">
-      <div class="team-avatar" style="background: rgba(239,68,68,0.1);">🎬</div>
-      <div class="team-role">Video Producer</div>
-      <div class="team-name">Video Team / Freelancer</div>
-      <div class="team-tasks">
-        <span class="team-task-chip">Reels shoot</span>
-        <span class="team-task-chip">Edit + color</span>
-        <span class="team-task-chip">Live stream</span>
-        <span class="team-task-chip">Event coverage</span>
-      </div>
-    </div>
-    <div class="team-card">
-      <div class="team-avatar" style="background: rgba(46,125,50,0.1);">💻</div>
-      <div class="team-role">Web & IT Lead</div>
-      <div class="team-name">Akhil</div>
-      <div class="team-tasks">
-        <span class="team-task-chip">Website fixes</span>
-        <span class="team-task-chip">Pixel setup</span>
-        <span class="team-task-chip">Landing pages</span>
-        <span class="team-task-chip">Analytics setup</span>
-      </div>
-    </div>
-    <div class="team-card">
-      <div class="team-avatar" style="background: rgba(0,137,123,0.1);">✍️</div>
-      <div class="team-role">Content Writer</div>
-      <div class="team-name">Content / DM Support</div>
-      <div class="team-tasks">
-        <span class="team-task-chip">Captions</span>
-        <span class="team-task-chip">Blogs (SEO)</span>
-        <span class="team-task-chip">Press releases</span>
-        <span class="team-task-chip">Email copy</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- Weekly cadence -->
-  <div style="background: var(--white); border-radius: var(--radius); padding: 22px; margin-top: 20px; box-shadow: var(--shadow);">
-    <div class="timeline-card-title" style="margin-bottom: 14px;">📅 Weekly Execution Cadence</div>
-    <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 10px;">
-      <div style="background: var(--light-gray); border-radius: 8px; padding: 12px; font-size: 12px;">
-        <div style="font-weight:700; color: var(--solar-gold); margin-bottom:4px;">Monday</div>
-        <div style="color:var(--text-mid);">Weekly sprint planning. Content calendar approval. Client update call.</div>
-      </div>
-      <div style="background: var(--light-gray); border-radius: 8px; padding: 12px; font-size: 12px;">
-        <div style="font-weight:700; color: var(--sky-blue); margin-bottom:4px;">Tuesday–Wednesday</div>
-        <div style="color:var(--text-mid);">Content batch creation. Video shoots. Design production sprint.</div>
-      </div>
-      <div style="background: var(--light-gray); border-radius: 8px; padding: 12px; font-size: 12px;">
-        <div style="font-weight:700; color: var(--energy-green); margin-bottom:4px;">Thursday</div>
-        <div style="color:var(--text-mid);">Ads review + optimization. Campaign performance analysis. Budget pacing check.</div>
-      </div>
-      <div style="background: var(--light-gray); border-radius: 8px; padding: 12px; font-size: 12px;">
-        <div style="font-weight:700; color: var(--accent-teal); margin-bottom:4px;">Friday</div>
-        <div style="color:var(--text-mid);">Schedule next week's content. Influencer coordination. PR follow-ups.</div>
-      </div>
-      <div style="background: var(--light-gray); border-radius: 8px; padding: 12px; font-size: 12px;">
-        <div style="font-weight:700; color: var(--text-mid); margin-bottom:4px;">Weekend</div>
-        <div style="color:var(--text-mid);">High-engagement posting window. Community management. WhatsApp broadcasts.</div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- ── SECTION: WEBSITE AUDIT ── -->
-<div class="section-block" id="website">
-  <div class="section-label">Website Strategy</div>
-  <div class="section-title">expokerala.com — Audit, Fixes & Growth Plan</div>
-  <p class="section-sub">The website is the conversion hub for all campaigns. Before spending a rupee on ads, fix the foundation. Priority: speed, mobile UX, clear CTAs, and SEO meta structure.</p>
-
-  <div class="audit-list" style="margin-bottom: 24px;">
-    <div class="audit-item">
-      <div class="audit-icon red">🔴</div>
-      <div class="audit-text"><strong>No clear conversion CTA above fold</strong>Visitor registration and exhibitor registration CTAs buried. Must be visible within 3 seconds on mobile.</div>
-    </div>
-    <div class="audit-item">
-      <div class="audit-icon red">🔴</div>
-      <div class="audit-text"><strong>Page content references Jan 2026 (outdated)</strong>Current website shows "Jan 9–11 2026 Ernakulam" — needs immediate update to September 25–27 Trivandrum edition.</div>
-    </div>
-    <div class="audit-item">
-      <div class="audit-icon red">🔴</div>
-      <div class="audit-text"><strong>No Meta Pixel / Google Analytics verified</strong>GTM is installed but no confirmed conversion events. Fix before any ad spend goes live.</div>
-    </div>
-    <div class="audit-item">
-      <div class="audit-icon orange">🟡</div>
-      <div class="audit-text"><strong>Missing vendor landing page</strong>Stall registration needs a dedicated page with pricing table, floor plan mockup, and direct booking form.</div>
-    </div>
-    <div class="audit-item">
-      <div class="audit-icon orange">🟡</div>
-      <div class="audit-text"><strong>No SEO meta tags / OG images</strong>Pages lack optimized title tags, descriptions, and Open Graph images for social sharing. Fix for all key pages.</div>
-    </div>
-    <div class="audit-item">
-      <div class="audit-icon orange">🟡</div>
-      <div class="audit-text"><strong>Mobile load speed needs improvement</strong>Heavy image assets without lazy loading. Target &lt;3s load on mobile. Compress images, enable CDN.</div>
-    </div>
-    <div class="audit-item">
-      <div class="audit-icon orange">🟡</div>
-      <div class="audit-text"><strong>No blog/content section for SEO</strong>Add a blog section to publish 8 SEO articles targeting high-intent keywords. Major organic traffic opportunity.</div>
-    </div>
-    <div class="audit-item">
-      <div class="audit-icon green">🟢</div>
-      <div class="audit-text"><strong>Social links present + GTM installed</strong>Good foundation. Facebook Pixel (ID: 2713631168976653) is installed. Build conversion events on top of this.</div>
-    </div>
-    <div class="audit-item">
-      <div class="audit-icon green">🟢</div>
-      <div class="audit-text"><strong>Registration forms exist</strong>Visitor and exhibitor registration pages are live. Optimize form UX — reduce fields, add progress indicator.</div>
-    </div>
-  </div>
-
-  <!-- Website fix priority -->
-  <div style="background: var(--white); border-radius: var(--radius); padding: 22px; box-shadow: var(--shadow);">
-    <div class="timeline-card-title" style="margin-bottom: 16px;">🔧 Website Fix Priority Order (Week 1)</div>
-    <div class="prog-wrap">
-      <div class="prog-item">
-        <div class="prog-label"><span>Update event dates + venue (Sep 25–27, Trivandrum)</span><span style="color:var(--danger);font-weight:700;">URGENT — Day 1</span></div>
-        <div class="prog-bar"><div class="prog-fill" style="width:100%"></div></div>
-      </div>
-      <div class="prog-item">
-        <div class="prog-label"><span>Verify Meta Pixel conversion events (registration = conversion)</span><span style="color:var(--danger);font-weight:700;">URGENT — Day 1</span></div>
-        <div class="prog-bar"><div class="prog-fill" style="width:100%"></div></div>
-      </div>
-      <div class="prog-item">
-        <div class="prog-label"><span>Add prominent CTAs above fold (Visitor Register + Exhibitor Register)</span><span style="color:var(--warning);font-weight:600;">Week 1</span></div>
-        <div class="prog-bar"><div class="prog-fill green" style="width:90%"></div></div>
-      </div>
-      <div class="prog-item">
-        <div class="prog-label"><span>Build dedicated vendor stall page with pricing + floor plan</span><span style="color:var(--warning);font-weight:600;">Week 1</span></div>
-        <div class="prog-bar"><div class="prog-fill green" style="width:85%"></div></div>
-      </div>
-      <div class="prog-item">
-        <div class="prog-label"><span>Add SEO meta tags + OG images to all key pages</span><span style="color:var(--sky-blue);font-weight:600;">Week 2</span></div>
-        <div class="prog-bar"><div class="prog-fill blue" style="width:70%"></div></div>
-      </div>
-      <div class="prog-item">
-        <div class="prog-label"><span>Launch blog section + first 2 SEO articles</span><span style="color:var(--sky-blue);font-weight:600;">Week 2–3</span></div>
-        <div class="prog-bar"><div class="prog-fill blue" style="width:60%"></div></div>
-      </div>
-      <div class="prog-item">
-        <div class="prog-label"><span>Image compression + CDN / page speed optimization</span><span style="color:var(--accent-teal);font-weight:600;">Week 3</span></div>
-        <div class="prog-bar"><div class="prog-fill teal" style="width:50%"></div></div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- ── SECTION: COMPETITOR ── -->
-<div class="section-block" id="competitive">
-  <div class="section-label">Competitive Intelligence</div>
-  <div class="section-title">Masters vs KREEPA — Where We Win</div>
-  <p class="section-sub">KREEPA is 8–9 editions strong at Kochi. Masters is 4th edition in Trivandrum. Different markets, but competing for the same sponsors, vendors, and media attention. Here's how we differentiate.</p>
-
-  <div class="comp-grid">
-    <div class="comp-card">
-      <div class="comp-head">
-        <div class="comp-logo" style="background: rgba(245,166,35,0.1);">☀️</div>
-        <div><div class="comp-name">Masters Kerala RE Expo</div><div class="comp-tag">4th Edition — Sep 25–27 | Trivandrum</div></div>
-      </div>
-      <div class="comp-row"><span class="comp-k">Venue</span><span class="comp-v">LuLu Mall Trivandrum (Premium)</span></div>
-      <div class="comp-row"><span class="comp-k">City Edge</span><span class="comp-v badge-win">Trivandrum = Capital + KSEB HQ city</span></div>
-      <div class="comp-row"><span class="comp-k">Area</span><span class="comp-v">50,000 sq ft</span></div>
-      <div class="comp-row"><span class="comp-k">Audience Advantage</span><span class="comp-v badge-win">GenZ Activation + College tie-in</span></div>
-      <div class="comp-row"><span class="comp-k">Timing</span><span class="comp-v badge-win">September — 2 months before KREEPA</span></div>
-      <div class="comp-row"><span class="comp-k">Evening Program</span><span class="comp-v badge-win">Entertainment 7–9 PM (differentiator)</span></div>
-      <div class="comp-row"><span class="comp-k">Member Network</span><span class="comp-v">700+ MNRE registered vendors</span></div>
-      <div class="comp-row"><span class="comp-k">Marketing Approach</span><span class="comp-v badge-win">Full-stack digital + GenZ strategy</span></div>
-    </div>
-    <div class="comp-card">
-      <div class="comp-head">
-        <div class="comp-logo" style="background: rgba(21,101,192,0.1);">⚡</div>
-        <div><div class="comp-name">KREEPA Green Power Expo</div><div class="comp-tag">9th Edition — Nov 26–28 | Kochi (Adlux)</div></div>
-      </div>
-      <div class="comp-row"><span class="comp-k">Venue</span><span class="comp-v">Adlux Convention Centre, Angamaly</span></div>
-      <div class="comp-row"><span class="comp-k">Track Record</span><span class="comp-v badge-risk">8 editions — established brand</span></div>
-      <div class="comp-row"><span class="comp-k">Area</span><span class="comp-v">50,000 sq ft</span></div>
-      <div class="comp-row"><span class="comp-k">Government Support</span><span class="comp-v badge-risk">MNRE, MSME, NISE, KSEBL backed</span></div>
-      <div class="comp-row"><span class="comp-k">Timing</span><span class="comp-v badge-risk">November — more sponsor budget</span></div>
-      <div class="comp-row"><span class="comp-k">Evening Program</span><span class="comp-v">Standard trade show format</span></div>
-      <div class="comp-row"><span class="comp-k">Market Presence</span><span class="comp-v badge-risk">Kochi = Bigger commercial city</span></div>
-      <div class="comp-row"><span class="comp-k">Marketing Approach</span><span class="comp-v">Traditional + moderate digital</span></div>
-    </div>
-  </div>
-
-  <div class="alert" style="margin-top: 20px;">
-    <span>🏆</span>
-    <span><strong>Our Decisive Advantage:</strong> Masters happens in September — sponsors and vendors commit budgets early in the fiscal year, before KREEPA (November). If we capture them first with a premium pitch, KREEPA gets leftover budgets. This is a timing advantage we must weaponize in every sponsor communication starting July 1.</span>
-  </div>
-</div>
-
-<!-- ── SECTION: KPI DASHBOARD ── -->
-<div class="section-block" id="dashboard">
-  <div class="section-label">Performance Tracking</div>
-  <div class="section-title">Campaign KPI Dashboard</div>
-  <p class="section-sub">Track these metrics weekly. Green = on track, Yellow = needs attention, Red = immediate action. Client receives this dashboard update every 2 weeks.</p>
-
-  <div class="chart-grid">
-    <div class="chart-box">
-      <div class="chart-box-title">📈 Monthly Ad Spend Allocation</div>
-      <canvas id="spendChart"></canvas>
-    </div>
-    <div class="chart-box">
-      <div class="chart-box-title">🎯 Platform Budget Distribution</div>
-      <canvas id="platformChart"></canvas>
-    </div>
-    <div class="chart-box">
-      <div class="chart-box-title">📊 Content Production by Type</div>
-      <canvas id="contentChart"></canvas>
-    </div>
-    <div class="chart-box">
-      <div class="chart-box-title">📅 Campaign Phase Targets</div>
-      <canvas id="phaseChart"></canvas>
-    </div>
-  </div>
-
-  <!-- KPI Tracking Table -->
-  <div class="budget-table-wrap">
-    <table class="btable">
-      <thead>
-        <tr>
-          <th>KPI Metric</th>
-          <th>Target (End of Campaign)</th>
-          <th>Month 1 Milestone</th>
-          <th>Month 2 Milestone</th>
-          <th>Tool to Track</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr><td>Instagram Followers</td><td>5,000+</td><td>500+</td><td>2,500+</td><td>Meta Business Suite</td></tr>
-        <tr><td>Facebook Page Likes / Reach</td><td>3,000 likes · 1L+ reach</td><td>500 likes</td><td>1,500 likes</td><td>Meta Business Suite</td></tr>
-        <tr><td>LinkedIn Company Followers</td><td>800+</td><td>150+</td><td>400+</td><td>LinkedIn Analytics</td></tr>
-        <tr><td>Total Paid Ad Reach (3 months)</td><td>2,00,000+ impressions</td><td>30,000+</td><td>80,000+</td><td>Meta + Google Ads</td></tr>
-        <tr><td>Website Sessions</td><td>8,000–12,000</td><td>1,000+</td><td>4,000+</td><td>Google Analytics 4</td></tr>
-        <tr><td>Online Visitor Registrations</td><td>1,500–2,000</td><td>200+</td><td>800+</td><td>GA4 + registration form</td></tr>
-        <tr><td>Vendor Stall Inquiries (leads)</td><td>100–150</td><td>20+</td><td>60+</td><td>Meta Lead Gen + WhatsApp</td></tr>
-        <tr><td>Sponsor Decks Sent</td><td>20+ outreach (close 4–6)</td><td>10 sent</td><td>3 confirmed</td><td>Email tracking</td></tr>
-        <tr><td>Video Views (Reels + YouTube)</td><td>50,000+</td><td>5,000+</td><td>20,000+</td><td>IG + YT Analytics</td></tr>
-        <tr><td>Meta Ads CPL (cost per lead)</td><td>&lt;₹300 per lead</td><td>Calibrating</td><td>Optimize to &lt;₹350</td><td>Meta Ads Manager</td></tr>
-        <tr><td>Actual Walk-in Footfall (Sep 25–27)</td><td>15,000–20,000</td><td>—</td><td>—</td><td>On-site count</td></tr>
-        <tr><td>Vendor Stalls Confirmed</td><td>120–150</td><td>25+</td><td>80+</td><td>Event CRM / Mr. Noufal team</td></tr>
+        <tr><td>Campaign Strategy + Content Calendar</td><td class="yn-y">✓</td><td class="yn-y">✓</td></tr>
+        <tr><td>Pre-Registration + Calendar Reminder System</td><td class="yn-y">✓</td><td class="yn-y">✓</td></tr>
+        <tr><td>WhatsApp Broadcasts (700+ members)</td><td>4 messages</td><td>4 messages</td></tr>
+        <tr><td>Facebook + Instagram Management</td><td>~50 posts</td><td>75 posts</td></tr>
+        <tr><td>LinkedIn Management</td><td class="yn-p">Organic only</td><td class="yn-y">Paid InMail + Organic</td></tr>
+        <tr><td>YouTube</td><td class="yn-n">✗</td><td class="yn-y">✓ Live + uploads</td></tr>
+        <tr><td>Static Design Creatives</td><td>50 pieces</td><td>75 pieces + print assets</td></tr>
+        <tr><td>Video Production</td><td>8 reels (basic)</td><td>14 pieces + event film</td></tr>
+        <tr><td>On-Site Event Photography (3 days)</td><td class="yn-n">✗</td><td class="yn-y">✓ + same-day reels</td></tr>
+        <tr><td>Facebook + YouTube Live Streaming</td><td class="yn-n">✗</td><td class="yn-y">✓</td></tr>
+        <tr><td>Meta Ads Spend</td><td>₹1,20,000</td><td>₹1,80,000</td></tr>
+        <tr><td>Google Ads Spend</td><td>₹30,000 (Search only)</td><td>₹60,000 (Search + Display + YT)</td></tr>
+        <tr><td>LinkedIn Ads Spend</td><td class="yn-n">✗</td><td>₹45,000</td></tr>
+        <tr><td>SEO Blog Articles</td><td>3 articles</td><td>6 articles</td></tr>
+        <tr><td>Press Releases</td><td>1</td><td>2</td></tr>
+        <tr><td>Influencer Activations</td><td class="yn-n">✗</td><td>3 creators (barter-first)</td></tr>
+        <tr><td>Sponsor Outreach Brochure</td><td class="yn-n">✗</td><td class="yn-y">✓ Print + digital</td></tr>
+        <tr><td>Post-Event Highlight Film</td><td class="yn-n">✗</td><td class="yn-y">✓ 48-hr delivery</td></tr>
+        <tr><td>Success Story Vault (Year 5 assets)</td><td class="yn-n">✗</td><td class="yn-y">✓ Full library</td></tr>
+        <tr><td>Performance Reports</td><td>3 bi-weekly + final</td><td>6 bi-weekly + final ROI report</td></tr>
+        <tr><td><strong>Est. Walk-in Footfall</strong></td><td>8K–13K</td><td style="font-weight:700;color:var(--green);">15K–20K</td></tr>
+        <tr><td><strong>Est. Vendor Stall Leads</strong></td><td>40–65</td><td style="font-weight:700;color:var(--green);">80–120</td></tr>
+        <tr><td><strong>Est. Pre-Registrations</strong></td><td>600–1,000</td><td style="font-weight:700;color:var(--green);">1,500–2,500</td></tr>
+        <tr><td><strong>Total Investment (excl. GST)</strong></td><td style="font-weight:700;">₹5,50,000</td><td style="font-weight:700;color:var(--gold-dk);">₹6,90,000</td></tr>
+        <tr><td>Payment Terms</td><td>50% / 50%</td><td>50% / 25% / 25%</td></tr>
       </tbody>
     </table>
   </div>
 </div>
-
-<!-- ── SECTION: RISKS ── -->
-<div class="section-block" id="risks">
-  <div class="section-label">Risk Register</div>
-  <div class="section-title">Risks, Mitigation & Contingency</div>
-  <p class="section-sub">Every campaign at this scale has risks. Identifying them early prevents surprises. All mitigations are already built into the timeline.</p>
-
-  <div class="risk-table-wrap">
-    <table class="btable">
-      <thead>
-        <tr>
-          <th>Risk</th>
-          <th>Likelihood</th>
-          <th>Impact</th>
-          <th>Mitigation</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td><strong>Low vendor stall registrations by Aug 1</strong></td>
-          <td><span class="risk-badge risk-med">Medium</span></td>
-          <td><span class="risk-badge risk-high">High</span></td>
-          <td>WhatsApp direct outreach to 700+ member network Week 1. Incentive: early-bird stall discount for first 50 bookings.</td>
-        </tr>
-        <tr>
-          <td><strong>Title sponsor not confirmed by Aug 15</strong></td>
-          <td><span class="risk-badge risk-med">Medium</span></td>
-          <td><span class="risk-badge risk-high">High</span></td>
-          <td>Start sponsor outreach July 1. Prepare 3-tier contingency: one Title, two Co-sponsors to make up same revenue. Name confirmation public announcement creates more pressure.</td>
-        </tr>
-        <tr>
-          <td><strong>Meta ad CPL too high (&gt;₹500/lead)</strong></td>
-          <td><span class="risk-badge risk-med">Medium</span></td>
-          <td><span class="risk-badge risk-med">Medium</span></td>
-          <td>A/B test 3 creative variants per campaign. Reallocate budget from underperforming ad sets weekly. Lookalike audience from existing member list.</td>
-        </tr>
-        <tr>
-          <td><strong>Competing event announcement (non-KREEPA)</strong></td>
-          <td><span class="risk-badge risk-low">Low</span></td>
-          <td><span class="risk-badge risk-med">Medium</span></td>
-          <td>Finalize venue lock-in confirmation early. Use Ministry association and 700+ member backing as moat. PR coverage establishes primacy.</td>
-        </tr>
-        <tr>
-          <td><strong>Content production delays</strong></td>
-          <td><span class="risk-badge risk-med">Medium</span></td>
-          <td><span class="risk-badge risk-med">Medium</span></td>
-          <td>Batch produce 4 weeks ahead. Content bank of 20+ ready-to-post assets always maintained. 2-week buffer built into all schedules.</td>
-        </tr>
-        <tr>
-          <td><strong>Low GenZ attendance</strong></td>
-          <td><span class="risk-badge risk-med">Medium</span></td>
-          <td><span class="risk-badge risk-low">Low</span></td>
-          <td>Campus ambassador program starts Month 1. Solar Startup Challenge incentivizes participation. Evening entertainment is the conversion hook.</td>
-        </tr>
-        <tr>
-          <td><strong>Website / registration form downtime during campaign</strong></td>
-          <td><span class="risk-badge risk-low">Low</span></td>
-          <td><span class="risk-badge risk-high">High</span></td>
-          <td>Technical audit + uptime monitoring from Day 1. Backup WhatsApp registration path always communicated in ads.</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
 </div>
 
-</div><!-- /section -->
+<!-- ══ TOOLS ══ -->
+<div class="section" id="tools">
+<div class="wrap">
+  <div class="section-eye">07 — Tools & Technology</div>
+  <div class="section-h">Maximum Leverage. Minimum Waste.</div>
+  <p class="section-sub">Every tool listed here is either free, low-cost, or has a direct measurable ROI for this campaign. No bloated tech stacks.</p>
 
-<!-- FOOTER -->
+  <div class="tools-grid">
+    <div class="tool-card">
+      <div class="tool-icon" style="background:rgba(66,133,244,0.1);">📊</div>
+      <div class="tool-body">
+        <div class="tool-name">Meta Business Suite</div>
+        <div class="tool-purpose">Unified FB + IG management — posting, ads, analytics, lead gen forms, audience builder</div>
+        <div class="tool-tag">Free · Core Tool</div>
+      </div>
+    </div>
+    <div class="tool-card">
+      <div class="tool-icon" style="background:rgba(234,67,53,0.1);">📈</div>
+      <div class="tool-body">
+        <div class="tool-name">Google Analytics 4 + Search Console</div>
+        <div class="tool-purpose">Track every website session, conversion event, traffic source, and pre-registration click</div>
+        <div class="tool-tag">Free · Must Set Up Day 1</div>
+      </div>
+    </div>
+    <div class="tool-card">
+      <div class="tool-icon" style="background:rgba(37,211,102,0.1);">💬</div>
+      <div class="tool-body">
+        <div class="tool-name">AiSensy / Interakt</div>
+        <div class="tool-purpose">WhatsApp Business API — bulk broadcasts to 700+ members + automated pre-reg reminders</div>
+        <div class="tool-tag">₹2K–5K/month · High ROI</div>
+      </div>
+    </div>
+    <div class="tool-card">
+      <div class="tool-icon" style="background:rgba(0,137,123,0.1);">📅</div>
+      <div class="tool-body">
+        <div class="tool-name">AddEvent.com</div>
+        <div class="tool-purpose">One-click "Add to Calendar" for pre-registration — Google, Apple, Outlook. No coding required.</div>
+        <div class="tool-tag">Free tier sufficient</div>
+      </div>
+    </div>
+    <div class="tool-card">
+      <div class="tool-icon" style="background:rgba(245,166,35,0.1);">🎨</div>
+      <div class="tool-body">
+        <div class="tool-name">Canva Pro</div>
+        <div class="tool-purpose">Brand kit locked in. Batch-produce all 40–75 static creatives with consistent templates. Team collaboration.</div>
+        <div class="tool-tag">₹4K/year · Essential</div>
+      </div>
+    </div>
+    <div class="tool-card">
+      <div class="tool-icon" style="background:rgba(21,101,192,0.1);">🗓</div>
+      <div class="tool-body">
+        <div class="tool-name">Buffer / Meta Planner</div>
+        <div class="tool-purpose">Schedule all posts 2 weeks in advance. Ensures consistent publishing even during busy event week.</div>
+        <div class="tool-tag">Free tier · or ₹1.2K/month</div>
+      </div>
+    </div>
+    <div class="tool-card">
+      <div class="tool-icon" style="background:rgba(46,125,50,0.1);">📋</div>
+      <div class="tool-body">
+        <div class="tool-name">Google Sheets / Airtable</div>
+        <div class="tool-purpose">Pre-registration data capture, vendor lead tracking, content calendar, sponsor outreach CRM</div>
+        <div class="tool-tag">Free · Shared with Masters team</div>
+      </div>
+    </div>
+    <div class="tool-card">
+      <div class="tool-icon" style="background:rgba(239,68,68,0.1);">🎬</div>
+      <div class="tool-body">
+        <div class="tool-name">CapCut / Adobe Premiere</div>
+        <div class="tool-purpose">Reel editing. CapCut for fast same-day event edits. Premiere for quality speaker/highlight films.</div>
+        <div class="tool-tag">Free / ₹1.5K/month</div>
+      </div>
+    </div>
+    <div class="tool-card">
+      <div class="tool-icon" style="background:rgba(245,166,35,0.1);">🔗</div>
+      <div class="tool-body">
+        <div class="tool-name">Bitly / UTM Parameters</div>
+        <div class="tool-purpose">Every link in every ad and post gets a UTM tag. Know exactly which platform drove each registration.</div>
+        <div class="tool-tag">Free · Non-negotiable</div>
+      </div>
+    </div>
+    <div class="tool-card">
+      <div class="tool-icon" style="background:rgba(13,27,42,0.08);">🔍</div>
+      <div class="tool-body">
+        <div class="tool-name">Google Search Ads + Keyword Planner</div>
+        <div class="tool-purpose">Capture high-intent searches: "solar expo Trivandrum", "solar installation Kerala", "Masters Expo 2026"</div>
+        <div class="tool-tag">Pay per click · Budget controlled</div>
+      </div>
+    </div>
+    <div class="tool-card">
+      <div class="tool-icon" style="background:rgba(0,119,181,0.1);">💼</div>
+      <div class="tool-body">
+        <div class="tool-name">LinkedIn Campaign Manager</div>
+        <div class="tool-purpose">InMail to solar company directors + event ads targeting procurement heads. B2B only channel.</div>
+        <div class="tool-tag">Package B only</div>
+      </div>
+    </div>
+    <div class="tool-card">
+      <div class="tool-icon" style="background:rgba(255,0,0,0.07);">▶️</div>
+      <div class="tool-body">
+        <div class="tool-name">YouTube Studio + StreamYard</div>
+        <div class="tool-purpose">Speaker session uploads + live streaming key seminars. StreamYard for professional-looking FB + YT simultaneous live.</div>
+        <div class="tool-tag">Free / ₹2.5K/month</div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!-- ══ EXECUTION PLAN ══ -->
+<div class="section" id="exec">
+<div class="wrap">
+  <div class="section-eye">08 — Execution Responsibility Matrix</div>
+  <div class="section-h">Who Does What. When. No Gaps.</div>
+  <p class="section-sub">Clear ownership for every workstream across FlumenX team and Masters client team. Shared tracker updated weekly — both sides always know where we are.</p>
+
+  <div class="exec-wrap">
+    <div class="exec-col">
+      <div class="exec-col-h">FlumenX Team</div>
+      <div class="exec-item">
+        <div class="exec-item-h">🎯 Account Lead (Anoop)</div>
+        <div class="exec-item-p">Overall strategy, client liaison, bi-weekly reporting calls, sponsor outreach support, proposal iterations, budget pacing oversight</div>
+      </div>
+      <div class="exec-item">
+        <div class="exec-item-h">📱 Digital Marketing Lead</div>
+        <div class="exec-item-p">Meta Ads, Google Ads, LinkedIn Ads — setup, targeting, A/B testing, weekly optimisation. Content calendar management. Analytics tracking.</div>
+      </div>
+      <div class="exec-item">
+        <div class="exec-item-h">🎨 Design Lead</div>
+        <div class="exec-item-p">All static creatives (40 or 75), ad banners, sponsor brochure, print assets. Batch production in Canva Pro with Masters brand kit locked.</div>
+      </div>
+      <div class="exec-item">
+        <div class="exec-item-h">🎬 Video / Content</div>
+        <div class="exec-item-p">Reel production, speaker video editing, event-day filming, same-day reel publish, highlight film. Coordinates shoot days with Masters team.</div>
+      </div>
+      <div class="exec-item">
+        <div class="exec-item-h">💻 IT / Web (Akhil)</div>
+        <div class="exec-item-p">Website fixes, pixel setup, GA4 events, pre-registration landing page build, calendar integration, WhatsApp API setup, UTM link management</div>
+      </div>
+      <div class="exec-item">
+        <div class="exec-item-h">✍️ Content / SEO</div>
+        <div class="exec-item-p">Captions (bilingual), SEO blog articles, press releases, email copy, WhatsApp broadcast messages, post-event recap blog</div>
+      </div>
+    </div>
+    <div class="exec-col">
+      <div class="exec-col-h">Masters Client Team</div>
+      <div class="exec-item">
+        <div class="exec-item-h">📋 Admin Access — Week 1 Priority</div>
+        <div class="exec-item-p">Provide admin access to: Facebook page, Instagram, LinkedIn company page, YouTube channel, Google Search Console, expokerala.com backend. Without this, nothing moves.</div>
+      </div>
+      <div class="exec-item">
+        <div class="exec-item-h">💰 Sponsorship Pricing Decision</div>
+        <div class="exec-item-p">Confirm title, co-sponsor, and associate package pricing based on previous year actuals. FlumenX designs the brochure once pricing is confirmed. Needed by Jul 25.</div>
+      </div>
+      <div class="exec-item">
+        <div class="exec-item-h">📞 Sponsor Outreach Coordination</div>
+        <div class="exec-item-p">Mr. Noufal / leadership team makes direct calls to top-tier brands (Adani, Havells etc.) — FlumenX provides the deck, talking points, and follow-up email templates. Human relationships close big sponsors.</div>
+      </div>
+      <div class="exec-item">
+        <div class="exec-item-h">📸 Content Supply — Ongoing</div>
+        <div class="exec-item-p">Supply vendor and speaker confirmations, event floor plan, photos of venue/stalls, previous year footage for reference, confirmed speaker list with bios. Weekly supply cadence.</div>
+      </div>
+      <div class="exec-item">
+        <div class="exec-item-h">✅ Content Approval — 24-Hour SLA</div>
+        <div class="exec-item-p">All creatives and posts require Masters approval before publish. FlumenX sends batches weekly. Masters commits to 24-hour review turnaround — delays cascade into the publishing schedule.</div>
+      </div>
+      <div class="exec-item">
+        <div class="exec-item-h">📣 WhatsApp Network Access</div>
+        <div class="exec-item-p">Masters provides the 700+ MNRE member contact list for WhatsApp broadcast campaigns. FlumenX drafts the messages. Masters or FlumenX can send — decided by WhatsApp Business account setup.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="alert blue" style="margin-top:20px;">
+    <span>🗓</span>
+    <span><strong>Weekly Cadence:</strong> Monday — sprint planning + content calendar for the week. Wednesday — mid-week check: ad performance, content pipeline. Friday — weekly report shared with Masters. Fortnightly video call with Masters leadership (30 min max). All tasks tracked in a shared Google Sheet / Airtable dashboard — both teams have live visibility.</span>
+  </div>
+</div>
+</div>
+
+<!-- ══ CONFIRMATION ══ -->
+<div class="section" id="confirm">
+<div class="wrap">
+  <div class="section-eye">09 — Our Commitment</div>
+  <div class="section-h">Can We Deliver This?</div>
+  <p class="section-sub" style="margin-bottom:24px;">A direct answer to the committee's most important question.</p>
+
+  <div class="confirm-box">
+    <div class="confirm-yes">Yes. Fully.</div>
+    <div class="confirm-h">FlumenX commits to this campaign, start to finish.</div>
+    <div class="confirm-desc">We have the team, the tools, and the strategy ready to mobilise from July 18. Both packages are executable within the stated timeline. We've structured the campaign around your stated priorities — B2B vendor conversion, sponsor outreach, and genuine consumer walk-ins — not vanity metrics. The pre-registration system, the platform rebalance, and the 73-day compressed timeline are all engineered for Masters' specific goals this year.</div>
+    <div class="confirm-grid">
+      <div class="conf-item"><strong>Team Ready</strong>DM, Design, Video, IT, and Content — all roles assigned and available from Jul 18</div>
+      <div class="conf-item"><strong>Tools Ready</strong>Meta Suite, GA4, WhatsApp API, pre-reg system — can all be live within 5 business days</div>
+      <div class="conf-item"><strong>Timeline Viable</strong>73 days is tight but workable. Phase 1 starts simultaneously — no ramp-up month</div>
+      <div class="conf-item"><strong>Budget Honest</strong>Targets are calibrated to each package's actual ad spend — not inflated promises</div>
+      <div class="conf-item"><strong>Flexible Scope</strong>Package A can upgrade to Package B mid-campaign if Masters increases budget after results</div>
+      <div class="conf-item"><strong>Transparent Reporting</strong>You see actual ad spend data, actual lead numbers, and actual reach — every 2 weeks</div>
+    </div>
+  </div>
+
+  <div style="margin-top:24px;background:var(--white);border-radius:var(--r);padding:24px;box-shadow:var(--sh);">
+    <div style="font-weight:700;font-size:14px;margin-bottom:14px;">📋 What Happens If Masters Says Yes — First 5 Days</div>
+    <div class="g4">
+      <div style="background:var(--gray);border-radius:var(--rs);padding:12px;font-size:12px;">
+        <div style="font-weight:700;color:var(--gold-dk);margin-bottom:4px;">Day 1</div>
+        <div style="color:var(--mid);">Contract signed. 50% advance. FlumenX receives all social media admin access from Masters team.</div>
+      </div>
+      <div style="background:var(--gray);border-radius:var(--rs);padding:12px;font-size:12px;">
+        <div style="font-weight:700;color:var(--green);margin-bottom:4px;">Day 2–3</div>
+        <div style="color:var(--mid);">Pixel verified. GA4 events live. Brand kit locked. Pre-registration page build starts. WhatsApp API applied.</div>
+      </div>
+      <div style="background:var(--gray);border-radius:var(--rs);padding:12px;font-size:12px;">
+        <div style="font-weight:700;color:var(--sky);margin-bottom:4px;">Day 4</div>
+        <div style="color:var(--mid);">Content calendar for Week 1 shared with Masters for approval. Ads setup ready in Meta Business Suite.</div>
+      </div>
+      <div style="background:var(--gray);border-radius:var(--rs);padding:12px;font-size:12px;">
+        <div style="font-weight:700;color:var(--teal);margin-bottom:4px;">Day 5</div>
+        <div style="color:var(--mid);">First ads live. Save-the-date post published. WhatsApp blast #1 sent to 700+ member network.</div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
 <div class="footer">
-  <div style="font-size: 14px; font-weight: 600; color: var(--white); margin-bottom: 8px;">Masters Kerala RE Expo 2026 — Marketing Masterplan</div>
-  <p>Prepared by <strong>FlumenX · Misc Archive</strong> | Anoop Krishna V A | Strategic Partner to Mr. Noufal, President, Masters Association</p>
-  <p style="margin-top: 6px;">📧 hello@flumenx.com | 🌐 flumenx.com | Sep 25–27 | LuLu Mall Trivandrum</p>
-  <p style="margin-top: 10px; font-size: 11px;">This document is confidential. Content based on research from expokerala.com, kreepaexpo.com, Meta, LinkedIn, industry benchmarks. Budget estimates are indicative; final scope subject to client brief confirmation.</p>
+  <div style="font-size:13px;font-weight:600;color:var(--white);margin-bottom:6px;">Masters Kerala RE Expo 2026 — Revised Campaign Proposal</div>
+  <div>Prepared by <strong>FlumenX · Misc Archive</strong> | Anoop Krishna V A | anoopkrishna@flumenx.com | +91 8907 634900</div>
+  <div>Sep 25–27, 2026 · LuLu Mall, Trivandrum · Proposal valid 15 days · All amounts exclude 18% GST</div>
 </div>
-
-</div><!-- /main -->
 
 <script>
-// ── COUNTDOWN ──
-function updateCountdown() {
-  const target = new Date('2026-09-25T09:00:00+05:30');
-  const now = new Date();
-  const diff = target - now;
-  if (diff > 0) {
-    const days = Math.floor(diff / 86400000);
-    const hours = Math.floor((diff % 86400000) / 3600000);
-    const mins = Math.floor((diff % 3600000) / 60000);
-    const secs = Math.floor((diff % 60000) / 1000);
-    document.getElementById('days').textContent = days;
-    document.getElementById('hours').textContent = String(hours).padStart(2,'0');
-    document.getElementById('mins').textContent = String(mins).padStart(2,'0');
-    document.getElementById('secs').textContent = String(secs).padStart(2,'0');
-  }
-}
-updateCountdown();
-setInterval(updateCountdown, 1000);
-
-// ── NAV ACTIVE ──
-const navLinks = document.querySelectorAll('.nav-tabs a');
-navLinks.forEach(link => {
-  link.addEventListener('click', e => {
-    navLinks.forEach(l => l.classList.remove('active'));
-    e.target.classList.add('active');
+// Animate platform bars on scroll
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if(e.isIntersecting){
+      e.target.querySelectorAll('.plat-fill').forEach(b => {
+        const w = b.style.width;
+        b.style.width = '0';
+        setTimeout(() => b.style.width = w, 100);
+      });
+    }
   });
-});
-
-// ── CHARTS ──
-const GOLD = '#F5A623';
-const GREEN = '#2E7D32';
-const BLUE = '#1565C0';
-const TEAL = '#00897B';
-const NAVY = '#0D1B2A';
-const RED = '#EF4444';
-
-// Spend chart
-new Chart(document.getElementById('spendChart'), {
-  type: 'bar',
-  data: {
-    labels: ['Month 1 (Jun 21–Jul 20)', 'Month 2 (Jul 21–Aug 20)', 'Month 3 (Aug 21–Sep 27)'],
-    datasets: [{
-      label: 'Agency Fee',
-      data: [100000, 100000, 100000],
-      backgroundColor: NAVY + 'CC'
-    },{
-      label: 'Ad Spend',
-      data: [65000, 115000, 140000],
-      backgroundColor: GOLD + 'CC'
-    },{
-      label: 'Content & Other',
-      data: [70000, 100000, 125000],
-      backgroundColor: GREEN + 'CC'
-    }]
-  },
-  options: {
-    responsive: true,
-    plugins: { legend: { position: 'bottom', labels: { font: { family: 'DM Sans' }, boxWidth: 12 } } },
-    scales: {
-      x: { stacked: true, grid: { display: false }, ticks: { font: { size: 11 } } },
-      y: { stacked: true, ticks: { callback: v => '₹' + (v/1000) + 'K', font: { size: 11 } }, grid: { color: '#F4F6F8' } }
-    }
-  }
-});
-
-// Platform doughnut
-new Chart(document.getElementById('platformChart'), {
-  type: 'doughnut',
-  data: {
-    labels: ['Facebook', 'Instagram', 'LinkedIn', 'Google Ads', 'YouTube', 'WhatsApp (Zero cost)'],
-    datasets: [{
-      data: [30, 25, 20, 15, 10, 0],
-      backgroundColor: ['#1877F2', '#E1306C', '#0A66C2', '#4285F4', '#FF0000', '#25D366'],
-      borderWidth: 3,
-      borderColor: '#fff'
-    }]
-  },
-  options: {
-    responsive: true,
-    plugins: {
-      legend: { position: 'bottom', labels: { font: { family: 'DM Sans' }, boxWidth: 12, padding: 10 } },
-      tooltip: { callbacks: { label: ctx => ctx.label + ': ' + ctx.raw + '%' } }
-    },
-    cutout: '65%'
-  }
-});
-
-// Content types
-new Chart(document.getElementById('contentChart'), {
-  type: 'bar',
-  data: {
-    labels: ['Static Posts', 'Video Pieces', 'Written / SEO', 'Design Assets'],
-    datasets: [{
-      label: 'Total Pieces',
-      data: [90, 46, 39, 39],
-      backgroundColor: [GOLD, RED, GREEN, BLUE],
-      borderRadius: 6,
-      borderSkipped: false
-    }]
-  },
-  options: {
-    responsive: true,
-    plugins: { legend: { display: false } },
-    scales: {
-      x: { grid: { display: false }, ticks: { font: { size: 11 } } },
-      y: { ticks: { font: { size: 11 } }, grid: { color: '#F4F6F8' } }
-    }
-  }
-});
-
-// Phase targets
-new Chart(document.getElementById('phaseChart'), {
-  type: 'line',
-  data: {
-    labels: ['Jun 21', 'Jul 1', 'Jul 15', 'Aug 1', 'Aug 15', 'Sep 1', 'Sep 15', 'Sep 27'],
-    datasets: [{
-      label: 'Target Vendor Bookings',
-      data: [0, 15, 40, 70, 110, 135, 148, 150],
-      borderColor: GOLD,
-      backgroundColor: GOLD + '20',
-      fill: true,
-      tension: 0.4,
-      borderWidth: 2,
-      pointRadius: 4
-    },{
-      label: 'Target Visitor Registrations',
-      data: [0, 100, 400, 1000, 2000, 3500, 4500, 5000],
-      borderColor: GREEN,
-      backgroundColor: GREEN + '20',
-      fill: true,
-      tension: 0.4,
-      borderWidth: 2,
-      pointRadius: 4
-    }]
-  },
-  options: {
-    responsive: true,
-    plugins: { legend: { position: 'bottom', labels: { font: { family: 'DM Sans' }, boxWidth: 12 } } },
-    scales: {
-      x: { grid: { display: false }, ticks: { font: { size: 10 } } },
-      y: { grid: { color: '#F4F6F8' }, ticks: { font: { size: 10 } } }
-    }
-  }
-});
-
-// Animate platform bars on load
-window.addEventListener('load', () => {
-  document.querySelectorAll('.platform-fill').forEach(bar => {
-    const w = bar.style.width;
-    bar.style.width = '0';
-    setTimeout(() => { bar.style.width = w; }, 300);
-  });
-});
+},{threshold:0.3});
+document.querySelectorAll('.plat-grid').forEach(g => observer.observe(g));
 </script>
 </body>
 </html>
